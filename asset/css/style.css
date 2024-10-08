@@ -1107,3 +1107,151 @@
     padding-right: 10px;
 }
 /* <!--End Đăng Nhập và Đăng Ký--> */
+
+/* Gioi Thieu */
+.vct {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 40px;
+    border: 2px solid white;
+}
+
+.gt12, .gpkd {
+    font-family: "Inter", sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-size: 17px;
+    border: 2px solid white;
+}
+
+.hinha1 {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 500px;
+}
+
+/* End Gioi Thieu */
+
+/* Lien He */
+.lienhe1     {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 40px;
+    border: 2px solid white;
+}
+
+.maps {
+    display: flex;
+    width: 90%;
+    height: 600px; 
+    border: 0px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fa-location-dot, .fa-phone, .fa-clock {
+    margin: 50px; 
+    font-size: 30px;
+    color: #5B3724;
+}
+
+.chu1 {
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    color: #5B3724;
+    margin-top: -30px;
+}
+
+.lh3cai {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.chu2 {
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    color: #5B3724;
+    margin-top: -15px;
+}
+
+.cauhoilh {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 40px;
+    border: 2px solid white;
+}
+
+.cauhoilh12 {
+    font-family: "Inter", sans-serif;
+    width: 30.2%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.cauhoichude {
+    font-family: "Inter", sans-serif;
+    width: 62%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.vietcmt {
+    font-family: "Inter", sans-serif;
+    width: 62%;
+    padding: 100px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: left;
+    vertical-align: top;
+    height: 100px;  
+}
+
+.nutgui {
+    width: 62%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #5B3724;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 17px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.nutgui:hover {
+    background-color: #555;
+}
+
+.toanbo1 {
+    text-align: center;
+}
+/* End Lien He */
