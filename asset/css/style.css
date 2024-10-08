@@ -925,3 +925,83 @@
 
 
 /* sanpham_vang */
+
+/* * <!--Đăng Nhập và Đăng Ký--> */
+.logo1{
+    height: 120px;
+     width: 120px;
+}
+
+.vetrangchu{
+    position: absolute;
+    color: black;
+    right: 60px;
+    top: 150px;
+    z-index: 3;
+    background-color: #ffff;
+    border: #ffff solid;
+    font-size: 24px;
+}
+.align-center{
+    border: 1px solid #ffff;
+    width: 600px;
+    height: 600px;
+    text-align: center;
+    border-radius: 30px;
+    margin: 20px auto;
+}
+.chung{
+    display: inline-block;
+    margin: 20px auto;
+}
+.tieude{
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-left: 110px;  
+    height: 25px;
+}
+.sizetieude1{
+    font-size: 38px;
+}
+.sizetieude2{
+    font-size: 20px;
+}
+.form-align{
+    border-radius: 10px;
+    padding: 9px;
+}
+.nutdangky{
+    text-align: center;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 5px;
+    width: 350px;
+    background-color: #DBD5CB;
+    color: #5B3724;
+}
+.nutdangky:hover{
+    color: #fff;
+    background-color: #5B3724;
+}
+.thaythedangky{
+    border-bottom: 1px solid;
+}
+.icon{
+    margin: 20px;   
+}
+.icon a{
+    text-decoration: none;
+}
+.icon1{
+    height: 100px;
+}
+.google{
+    height: 30px;
+    padding-left: 10px;
+}
+.facebook{
+    height: 30px;
+    padding-right: 10px;
+}
+/* <!--End Đăng Nhập và Đăng Ký--> */
