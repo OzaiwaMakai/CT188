@@ -48,6 +48,21 @@
     align-items: center;
 }
 
+.header .inner-wrap .inner-header-bar {
+    display: none;
+}
+
+.header .inner-wrap .inner-header-bar a{
+    display: none;
+    color: var(--primary-color-2);
+}
+
+.header .inner-wrap .inner-header-bar a:hover {
+    color: var(--primary-color-1);
+    background-color: var(--primary-color-2);
+    transition: linear 0.5s;
+}
+
 .header .inner-wrap .inner-logo {
     width: 80px;
     height: 80px;
@@ -111,6 +126,47 @@
     transition: linear 0.5s;
 }
 
+@media (max-width: 1199.98px) {
+    /* Code… */
+    .header .inner-wrap .inner-list-nav a {
+        font-size: 16px;
+        padding: 30px 12px;
+    }
+   }
+   /* Kích thước nhỏ hơn 992px */
+   @media (max-width: 991.98px) {
+    /* Code… */
+    .header {
+        padding: 0px;
+    }
+    .header .inner-wrap .inner-list-nav {
+        display: none;
+    }
+
+    .header .inner-wrap .inner-header-bar {
+        display: block;
+    }
+
+    .header .inner-wrap .inner-header-bar a{
+        display: inline-block;
+        font-size: 28px;
+        padding: 5px 15px;
+        border-radius: 5px;
+    }
+
+    .header .inner-wrap .inner-list-user li:nth-child(1) {
+        display: none;
+    }
+
+    .header .inner-wrap .inner-list-user li:nth-child(3) {
+        display: none;
+    }
+
+    .header .inner-wrap .inner-logo{
+        text-align: center;
+    }
+   }
+
 /*End Header */
 
 /* section one */
@@ -138,6 +194,23 @@
     font-size: 22px;
     margin-bottom: 40px;
 }
+
+@media (max-width: 767.98px) {
+
+
+    .section-one .inner-wrap .inner-content .inner-title {
+        font-size: 50px;
+    }
+}
+
+   /* Kích thước nhỏ hơn 576px */
+@media (max-width: 575.98px) {
+    .section-one .inner-wrap .inner-content {
+        text-align: center;
+    }
+}
+
+
 /* End section one */
 /*  section two */
  .section-two {
@@ -168,7 +241,8 @@
     width: 100%;
     border-radius: 5px;
     transition: linear 0.3s;
-
+    height: 100%;
+    object-fit: cover;
  }
 
  .section-two .inner-wrap .inner-item .inner-box {
@@ -193,6 +267,37 @@
     border: none;
  }
 
+ @media (max-width: 991.98px) {
+    /* Code… */
+    .section-two .inner-wrap .inner-item .inner-box {
+        width: 100%;
+    }
+}
+@media (max-width: 767.98px) {
+    .section-two .inner-wrap .inner-item {
+        max-width: 100%;
+    }
+
+    .section-two .inner-wrap .inner-item:nth-child(1) {
+        margin-bottom: 30px;
+    }
+
+    .section-two .inner-wrap .inner-item .inner-box .inner-title {
+        font-size: 34px;
+        margin-bottom: 30px;
+    }
+
+    .section-two .inner-wrap .inner-item .inner-box .inner-desc {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .section-two .inner-wrap .inner-item .inner-box .button {
+        font-size: 17px;
+        padding: 10px 24px;
+    }
+}
+
 
 /* End section two */
 /*  section three */
@@ -211,6 +316,7 @@
     border-radius: 10px;
     padding: 0px;
     width: 40%;
+    flex: 1;
 }
 
 
@@ -223,7 +329,7 @@
 
 .section-three .inner-wrap .inner-content {
     text-align: center;
-
+    margin-left: 5%;
 }
 
 .section-three .inner-wrap .inner-content .inner-title {
@@ -259,6 +365,7 @@
     border-radius: 10px;
     padding: 0px;
     width: 40%;
+    flex: 1;
 }
 
 
@@ -272,7 +379,7 @@
 
 .section-four .inner-wrap .inner-content {
     text-align: center;
-
+    margin-right: 5%;
 }
 
 .section-four .inner-wrap .inner-content .inner-title {
@@ -1120,6 +1227,10 @@
 
 /* Gioi Thieu */
 .vct {
+
+    /* font-family: "Inter", sans-serif; */
+    font-optical-sizing: auto;
+    font-style: normal;
     margin-top: 40px;
     margin-bottom: 30px;
     text-align: center;
