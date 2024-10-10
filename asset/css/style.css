@@ -1008,9 +1008,6 @@
 
 /* Gioi Thieu */
 .vct {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
     margin-top: 40px;
     margin-bottom: 30px;
     text-align: center;
@@ -1019,7 +1016,6 @@
 }
 
 .gt12, .gpkd {
-    font-family: "Inter", sans-serif;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 80px;
@@ -1039,10 +1035,7 @@
 /* End Gioi Thieu */
 
 /* Lien He */
-.lienhe1     {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+.lienhe1 {
     margin-top: 40px;
     margin-bottom: 30px;
     text-align: center;
@@ -1082,15 +1075,12 @@
 }
 
 .chu2 {
-    font-family: "Inter", sans-serif;
     font-size: 17px;
     color: #5B3724;
     margin-top: -15px;
 }
 
 .cauhoilh {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
     font-style: normal;
     margin-top: 40px;
     margin-bottom: 30px;
@@ -1100,7 +1090,6 @@
 }
 
 .cauhoilh12 {
-    font-family: "Inter", sans-serif;
     width: 30.2%;
     padding: 10px;
     margin: 10px;
@@ -1110,7 +1099,6 @@
 }
 
 .cauhoichude {
-    font-family: "Inter", sans-serif;
     width: 62%;
     padding: 10px;
     margin: 10px;
@@ -1120,16 +1108,13 @@
 }
 
 .vietcmt {
-    font-family: "Inter", sans-serif;
     width: 62%;
-    padding: 100px;
     margin: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    text-align: left;
-    vertical-align: top;
     height: 100px;  
+    padding: 5px;
 }
 
 .nutgui {
