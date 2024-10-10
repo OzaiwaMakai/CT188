@@ -958,8 +958,8 @@
     display: block;
     width: 100%;
     text-align: left;
-    margin-left: 70px;  
-    height: 25px;
+    margin-left: 80px;  
+    height: 25px;   
 }
 .sizetieude1{
     font-size: 38px;
@@ -1003,5 +1003,8 @@
 .facebook{
     height: 30px;
     padding-right: 10px;
+}
+.tieude label{
+    font-size: 18px;
 }
 /* <!--End Đăng Nhập và Đăng Ký--> */
