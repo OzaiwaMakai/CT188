@@ -391,6 +391,108 @@
 
 }
 /* End Section six */
+
+/* section-seven */
+
+.section-seven {
+    background-color: var(--background-color-1);
+    padding: 90px 0px;
+}
+
+.section-seven .inner-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+
+.section-seven .inner-list {
+    justify-content: space-between;
+}
+
+.section-seven .inner-list .inner-item {
+    background-color: var(--primary-color-1);
+    padding: 35px 40px;
+    border-radius: 5px;
+    max-width: calc(50% - 16px);
+}
+
+.section-seven .inner-list .inner-item .inner-wrap {
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    margin-bottom: 35px;
+}
+
+.section-seven .inner-list .inner-item .inner-wrap .inner-info {
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px;
+}
+
+.section-seven .inner-list .inner-item .inner-wrap .inner-info .inner-image {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: contain;
+    border: 3px solid var(--primary-color-2);
+}
+
+.section-seven .inner-list .inner-item .inner-wrap .inner-info .inner-image img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.section-seven .inner-list .inner-item .inner-wrap .inner-info  .inner-customer {
+    margin-left: 30px;
+    position: relative;
+    font-weight: 600;
+}
+
+.section-seven .inner-list .inner-item .inner-wrap .inner-info  .inner-customer::before {
+    content: "";
+    height: 100%;
+    width: 5px;
+    background-color: var(--primary-color-2);
+    position: absolute;
+    left: -20px;
+    border: 5px;
+}
+
+
+.section-seven .inner-list .inner-item .inner-wrap .inner-info  .inner-customer .inner-name {
+    font-size: 19px;
+}
+
+.section-seven .inner-list .inner-item .inner-wrap .inner-info  .inner-customer .inner-role {
+    margin: 0px;
+    color: var(--primary-color-2);
+    font-weight: 500;
+}
+
+.section-seven .inner-list .inner-item .inner-wrap .inner-rate i {
+    color: #ffc107;
+    font-size: 20px;
+}
+
+.section-seven .inner-list .inner-item .inner-comment {
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.section-seven .inner-list .inner-item .inner-desc {
+    font-size: 18px;
+}
+
+
+
+
+
+
+/*End section-seven */
+
+
+
  /* Footer */
 .footer {
     padding-top: 30px ;
@@ -1004,7 +1106,159 @@
     height: 30px;
     padding-right: 10px;
 }
+<<<<<<< HEAD
 .tieude label{
     font-size: 18px;
 }
 /* <!--End Đăng Nhập và Đăng Ký--> */
+=======
+/* <!--End Đăng Nhập và Đăng Ký--> */
+
+/* Gioi Thieu */
+.vct {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 40px;
+    border: 2px solid white;
+}
+
+.gt12, .gpkd {
+    font-family: "Inter", sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-size: 17px;
+    border: 2px solid white;
+}
+
+.hinha1 {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 500px;
+}
+
+/* End Gioi Thieu */
+
+/* Lien He */
+.lienhe1     {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 40px;
+    border: 2px solid white;
+}
+
+.maps {
+    display: flex;
+    width: 90%;
+    height: 600px; 
+    border: 0px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fa-location-dot, .fa-phone, .fa-clock {
+    margin: 50px; 
+    font-size: 30px;
+    color: #5B3724;
+}
+
+.chu1 {
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    color: #5B3724;
+    margin-top: -30px;
+}
+
+.lh3cai {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.chu2 {
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    color: #5B3724;
+    margin-top: -15px;
+}
+
+.cauhoilh {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 40px;
+    border: 2px solid white;
+}
+
+.cauhoilh12 {
+    font-family: "Inter", sans-serif;
+    width: 30.2%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.cauhoichude {
+    font-family: "Inter", sans-serif;
+    width: 62%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.vietcmt {
+    font-family: "Inter", sans-serif;
+    width: 62%;
+    padding: 100px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: left;
+    vertical-align: top;
+    height: 100px;  
+}
+
+.nutgui {
+    width: 62%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #5B3724;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 17px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.nutgui:hover {
+    background-color: #555;
+}
+
+.toanbo1 {
+    text-align: center;
+}
+/* End Lien He */
+>>>>>>> 9dce1c279b5c0eb1ff13fb789b46e663915401b8
