@@ -1109,10 +1109,11 @@
 
 .tieude label{
     font-size: 18px;
+    font-weight: 550;
 }
 .tieudebonus{
     margin-bottom: -10px;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 /* <!--End Đăng Nhập và Đăng Ký--> */
