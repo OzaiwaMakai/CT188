@@ -1124,22 +1124,101 @@
     border: 2px solid white;
 }
 
-.gt12, .gpkd {
+.gt12 {
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 80px;
-    margin-right: 80px;
-    font-size: 17px;
+    margin-left: 120px;
+    font-size: 18.5px;
     border: 2px solid white;
+    text-align: justify;
 }
 
 .hinha1 {
     display: flex;
     margin-left: auto;
-    margin-right: auto;
-    width: 600px;
-    height: 500px;
+    margin-right: 120px;
+    width: 550px;
+    height: 400px;
+    margin-bottom: 20px;
 }
+
+.chiacot {
+    column-count: 2;
+    break-before: column;
+}
+
+.bosuutap {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 40px;
+    border: 2px solid white;
+}
+
+.ngayphunu {
+    margin: 10px;
+    border: 1px solid #5B3724;
+    width: 25%;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 90px;
+    /* box-shadow: 5px 5px 10px #C09B81; */
+}
+
+.hinhngayphunu {
+    display: flex;
+    width: 350px;
+    height: 350px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.catinh {
+    margin: 10px;
+    border: 1px solid #5B3724;
+    width: 25%;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 90px;
+}
+
+.hinhcatinh {
+    display: flex;
+    width: 350px;
+    height: 350px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.hinhphongcach {
+    display: flex;
+    width: 350px;
+    height: 350px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.phongcach {
+    margin: 10px;
+    border: 1px solid #5B3724;
+    width: 25%;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 90px;
+}
+
+.gioithieu3cai {
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between;     */
+    margin-bottom: 30px; 
+} 
 
 /* End Gioi Thieu */
 
@@ -1168,7 +1247,6 @@
 }
 
 .chu1 {
-    font-family: "Inter", sans-serif;
     font-size: 17px;
     color: #5B3724;
     margin-top: -30px;
