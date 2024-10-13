@@ -1137,8 +1137,8 @@
 
 /* * <!--Đăng Nhập và Đăng Ký--> */
 .logo1{
-    height: 120px;
-     width: 120px;
+    height: 100px;
+     width: 100px;
 }
 
 .vetrangchu{
@@ -1161,7 +1161,7 @@
 }
 .chung{
     display: inline-block;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 .tieude{
     display: block;
@@ -1214,6 +1214,9 @@
     padding-right: 10px;
 }
 
+.checkbox{
+    margin:-10px auto;
+}
 .tieude label{
     font-size: 18px;
     font-weight: 550;
