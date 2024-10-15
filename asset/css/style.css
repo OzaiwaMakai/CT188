@@ -1272,16 +1272,16 @@
 .ngayphunu {
     margin: 10px;
     border: 1px solid #5B3724;
-    width: 25%;
+    width: 30%;
     padding: 5px;
     border-radius: 5px;
-    margin-left: 90px;
+    /* margin-left: 90px; */
     /* box-shadow: 5px 5px 10px #C09B81; */
 }
 
 .hinhngayphunu {
     display: flex;
-    width: 350px;
+    width: 100%;
     height: 350px;
     margin-bottom: 20px;
     margin-left: auto;
@@ -1292,15 +1292,15 @@
 .catinh {
     margin: 10px;
     border: 1px solid #5B3724;
-    width: 25%;
+    width: 30%;
     padding: 5px;
     border-radius: 5px;
-    margin-left: 90px;
+    /* margin-left: 90px; */
 }
 
 .hinhcatinh {
     display: flex;
-    width: 350px;
+    width: 100%;
     height: 350px;
     margin-bottom: 20px;
     margin-left: auto;
@@ -1310,7 +1310,7 @@
 
 .hinhphongcach {
     display: flex;
-    width: 350px;
+    width: 100%;
     height: 350px;
     margin-bottom: 20px;
     margin-left: auto;
@@ -1321,16 +1321,16 @@
 .phongcach {
     margin: 10px;
     border: 1px solid #5B3724;
-    width: 25%;
+    width: 30%;
     padding: 5px;
     border-radius: 5px;
-    margin-left: 90px;
+    /* margin-left: 90px; */
 }
 
 .gioithieu3cai {
     width: 100%;
     display: flex;
-    /* justify-content: space-between;     */
+    justify-content: space-between;    
     margin-bottom: 30px; 
 } 
 
