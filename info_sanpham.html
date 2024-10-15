@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+        <link rel="stylesheet" href="asset/css/base.css">
+        <link rel="stylesheet" href="asset/css/style.css">
+        <link rel="icon" href="asset/image/Juliana (1)-Photoroom.png">
+        <title>Calvados Jewelry</title>
+    </head>
+    <body>
+
+        <header class="header">
+            <div class="container-fluid">
+                <div class="inner-wrap row">
+                    <div class="inner-logo col-xl-3">
+                        <a href="#">
+                            <img src="asset/image/Juliana (1)-Photoroom.png" alt="logo">
+                        </a>
+                    </div>
+                    <ul class="inner-list-nav row col-xl-6">
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                    <ul class="inner-list-user row col-xl-3">
+                        <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        
+        <div class="product__info">
+            <div class="container">
+                <div class="row inner-wrap">
+                    <div class="col-xl-5">
+                        <div class="product__image">
+                            <!-- Swiper -->
+                            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="asset/image/sanpham/product infomation/nhẫn đính đá_1-1.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="asset/image/sanpham/product infomation/nhẫn đính đá_1-2.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="asset/image/sanpham/product infomation/nhẫn đính đá_1-3.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="asset/image/sanpham/product infomation/nhẫn đính đá_1-4.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                            <div thumbsSlider="" class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="asset/image/sanpham/product infomation/nhẫn đính đá_1-1.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="asset/image/sanpham/product infomation/nhẫn đính đá_1-2.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="asset/image/sanpham/product infomation/nhẫn đính đá_1-3.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="asset/image/sanpham/product infomation/nhẫn đính đá_1-4.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-7">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                Nhẫn bạc đính đá PNJSilver XMXMW000147   
+                            </h3>
+                            <div class="product_id-rate">
+                                <div class="id-rate-left">
+                                    <span>Mã: SNXMXMW000147</span>
+                                </div>
+                                <div class="id-rate-right">
+                                    <div class="id-rate-icon">
+                                        <i class="fa-solid fa-star"></i>
+                                        (126)
+                                    </div>
+                                    <span>đã bán</span>
+                                </div>
+                            </div>
+                            <div class="product__price">
+                                <span>455.000 đ</span>
+                            </div>
+                            <div id="buy-amount">
+                                <span class="buy-amount-title">Số lượng: </span>
+
+                                <button class="minus-btn" onclick="handelMinus()">
+                                    <i class="fa-solid fa-minus"></i>
+                                </button>
+                                <input type="text" name="amount" id="amount" value="1">
+                                <button class="plus-btn" onclick="handelPlus()">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+
+                            <div class="product__policy">
+                                <div class="policy-item">
+                                    <img src="asset/image/Policy/shipping-icon.svg" alt="">
+                                    <span>Miễn phí giao hàng</span>
+                                </div>
+                                <div class="policy-item">
+                                    <img src="asset/image/Policy/shopping 247-icon.svg" alt="">
+                                    <span>Phục vụ 24/7</span>
+                                </div>
+                                <div class="policy-item">
+                                    <img src="asset/image/Policy/thudoi-icon.svg" alt="">
+                                    <span>Thu đổi 48h</span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="product__btn">
+                                    <button class="col-xl-6 product--add-cart">
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                        Thêm vào giỏ hàng
+                                    </button>
+                                    <a href="" class="col-xl-6 product--buy">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        Mua ngay
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product__desc">
+            <div class="container">
+                <div class="row inner-wrap">
+                    <div class="col-xl-12">
+                        <h2 class="desc__title">Mô tả sản phẩm</h2>
+                        <div class="inner__content">
+                            <span class="desc-1">Thương hiệu: Calvados Jewelry</span>
+                            <span class="desc-2">Giới tính: Nữ</span>
+                            <span class="desc-1">Trọng lượng tham khảo: 3.4214</span>
+                            <span class="desc-2">Hàm lượng chất liệu: 9300</span>
+                            <p class="desc__main">Với kiểu dáng thời thượng cùng những viên đá đính xung quanh bề mặt chiếc nhẫn trên chất liệu bạc 92.5, PNJSilver mang đến chiếc nhẫn với vẻ đẹp trẻ trung nhưng không kém phần phá cách, giúp các cô gái trông thật nổi bật. <br>
+                            Calvados Jewelry hiểu rằng, các cô gái luôn có đặc quyền được làm đẹp và tỏa sáng để tạo nên phong cách riêng của chính mình. Để thỏa sức sáng tạo với lựa chọn riêng của từng cô gái, nàng có thể kết hợp nhiều items khác để dễ dàng mix&match với nhau tùy theo cá tính thời trang và luôn refresh diện mạo mỗi ngày nhé.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product__ratings">
+            <div class="container">
+                <div class="row inner-wrap">
+                    <div class="col-xl-12">
+                            <h2 class="rating__title">Đánh giá sản phẩm</h2>
+                            <div class="rating__overview">
+                                <div class="overview__star">
+                                    <div class="star__icon">
+                                        <span>5.0</span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="number__rating">Tổng cộng 2 đánh giá từ khách hàng</span>
+                                </div>
+                                <div class="overview__menu">
+                                    <div class="overview__menu--filer">Tất cả</div>
+                                    <div class="overview__menu--filer">5 Sao (2)</div>
+                                    <div class="overview__menu--filer">4 Sao</div>
+                                    <div class="overview__menu--filer">3 Sao</div>
+                                    <div class="overview__menu--filer">2 Sao</div>
+                                    <div class="overview__menu--filer">1 Sao</div>
+                                    <div class="overview__menu--filer">Có Bình Luận (2)</div>
+                                    <div class="overview__menu--filer">Có Hình Ảnh / Video</div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="row inner-wrap">
+                        <div class="col-xl-12">
+                            <div class="customer__rating">
+                                <div class="customer_cmt">
+                                    <div class="customer__avt">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z"/></svg>
+                                    </div>
+                                    <div class="customer_cmt-main">
+                                        <h3 class="customer_name">Quan Nguyen</h3>
+                                        <div class="customer__star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="customer_cmt-date">
+                                            10-12-2024 00:00
+                                        </span>
+                                        <p class="customer__comment">Nhờ shop mà người yêu em hết giận ròi shop ơi</p>
+                                    </div>
+                                </div>
+                                <div class="customer_cmt">
+                                    <div class="customer__avt">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z"/></svg>
+                                    </div>
+                                    <div class="customer_cmt-main">
+                                        <h3 class="customer_name">Hạo Nam</h3>
+                                        <div class="customer__star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="customer_cmt-date">
+                                            10-12-2024 00:00
+                                        </span>
+                                        <p class="customer__comment">Mới mua cho vk iu <3</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- PAGINATION -->
+                            <ul class="pagination pagination--customer__cmt">
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-link">
+                                        <i class="fa-solid fa-angle-left"></i>
+                                    </a>
+                                </li>
+                                <li class="pagination-item pagination-item-active">
+                                    <a href="" class="pagination-link">
+                                        1
+                                    </a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-link">
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- END PAGINATION -->
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="model__slide">
+            <div class="slide">
+                <div class="container">
+                    <h2 class="model__slide-title">Sản phẩm đề xuất</h2>
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card__wrapper">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="asset/image/sanpham/product infomation/sanphamlienquan_1-1.png" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <p style="text-align: center;" class="card-title">Nhẫn Bạc đính đá PNJSilver XMXMW060184</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="asset/image/sanpham/product infomation/sanphamlienquan_1-2.png" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <p style="text-align: center;" class="card-title">Nhẫn Bạc đính đá PNJSilver XMXMW000146</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="asset/image/sanpham/product infomation/sanphamlienquan_1-3.png" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <p style="text-align: center;" class="card-title">Nhẫn Bạc đính đá PNJSilver XMXMW060160</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="asset/image/sanpham/product infomation/sanphamlienquan_1-4.png" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <p style="text-align: center;" class="card-title">Nhẫn Bạc đính đá PNJSilver XM00W000078</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card__wrapper">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="asset/image/sanpham/product infomation/sanphamlienquan_1-5.png" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <p style="text-align: center;" class="card-title">Nhẫn Bạc đính đá PNJSilver TPXMW060005</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="asset/image/sanpham/product infomation/sanphamlienquan_1-6.png" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <p style="text-align: center;" class="card-title">Nhẫn Bạc đính đá PNJSilver XMXMW060145</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="asset/image/sanpham/product infomation/sanphamlienquan_1-7.png" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <p style="text-align: center;" class="card-title">Nhẫn Bạc đính đá PNJSilver XMXMW060167</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="asset/image/sanpham/product infomation/sanphamlienquan_1-8.png" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <p style="text-align: center;" class="card-title">Nhẫn Bạc đính đá PNJSilver XMXMK000065</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-logo">
+                    <a href="#"><img src="asset/image/logo-footer.png" alt=""></a>
+                </div>
+                <div class="inner-list row">
+                    <div class="inner-item col-xl-3">
+                        <div class="inner-title">Danh mục</div>
+                        <ul class="inner-nav">
+                            <li><a href="#">Hoa tai</a></li>
+                            <li><a href="#">Lắc tai</a></li>
+                            <li><a href="#">Nhẫn</a></li>
+                            <li><a href="#">Dây chuyền</a></li>
+                        </ul>
+                    </div>
+                    <div class="inner-item col-xl-3">
+                        <div class="inner-title">Liên kết</div>
+                        <ul class="inner-nav">
+                            <li><a href="#">Về chúng tôi</a></li>
+                            <li><a href="#">Chính sách đổi trả</a></li>
+                            <li><a href="#">Chính sách bảo hành</a></li>
+                            <li><a href="#">Chính sách vận chuyển</a></li>
+                        </ul>
+                    </div>
+                    <div class="inner-item col-xl-3">
+                        <div class="inner-title">Liên hệ</div>
+                        <ul class="inner-nav">
+                            <li><a href="#">Gọi ngay (+84) 123456789</a></li>
+                            <li><a href="#">Địa chỉ: Đại Học Cần Thơ, Ninh Kiều, TP. Cần Thơ</a></li>
+                            <li><a href="#">E-mail: Kyb2203508@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="inner-item col-xl-3">
+                        <div class="inner-title">Theo dõi chúng tôi trên</div>
+                        <ul class="inner-nav">
+                            <li><a href="#" class=" inner-socials"><i class="fa-brands fa-square-facebook inner-icon"></i>Facebook</a></li>
+                            <li><a href="#" class=" inner-socials"><i class="fa-brands fa-square-instagram inner-icon"></i>Instagram</a></li>
+                            <li><a href="#" class=" inner-socials"><i class="fa-brands fa-linkedin inner-icon"></i>LinkedIn</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <p class="inner-right">© Bản quyền thuộc về <strong>Calvados Jewelry</strong> | Cung cấp bởi <strong>Calvados Jewelry</strong></p>
+            </div>
+        </footer>
+
+        <!-- Amount JS -->
+        <script>
+            let amountElement = document.querySelector("#amount");
+            let amount = amountElement.value;
+            
+            
+            let updateValue = (amount) => {
+                amountElement.value = amount;
+            }
+
+            amountElement.addEventListener('input', () => {
+                amount = amountElement.value;
+                amount = parseInt(amount);
+                amount = (isNaN(amount) || amount==0)?1:amount;
+                updateValue(amount);
+            });
+            // Handle plus
+            let handelPlus = () => {
+                if(amount < 10)
+                    amount++;
+                updateValue(amount);
+            }
+            // Handle minus
+            let handelMinus = () => {
+                if(amount > 1)
+                    amount--;
+                updateValue(amount);
+            }
+        </script>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+            });
+            var swiper2 = new Swiper(".mySwiper2", {
+            loop: true,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+            });
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    </body>
+</html>
