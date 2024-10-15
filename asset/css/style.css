@@ -1809,7 +1809,6 @@
     width: 30%;
     padding: 5px;
     border-radius: 5px;
-    /* margin-left: 90px; */
     /* box-shadow: 5px 5px 10px #C09B81; */
 }
 
@@ -1829,7 +1828,6 @@
     width: 30%;
     padding: 5px;
     border-radius: 5px;
-    /* margin-left: 90px; */
 }
 
 .hinhcatinh {
@@ -1858,7 +1856,6 @@
     width: 30%;
     padding: 5px;
     border-radius: 5px;
-    /* margin-left: 90px; */
 }
 
 .gioithieu3cai {
@@ -1867,6 +1864,10 @@
     justify-content: space-between;    
     margin-bottom: 30px; 
 } 
+
+.tieudegioithieu {
+    font-size: 19px;
+}
 
 /* End Gioi Thieu */
 
