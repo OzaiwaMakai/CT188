@@ -48,6 +48,21 @@
     align-items: center;
 }
 
+.header .inner-wrap .inner-header-bar {
+    display: none;
+}
+
+.header .inner-wrap .inner-header-bar a{
+    display: none;
+    color: var(--primary-color-2);
+}
+
+.header .inner-wrap .inner-header-bar a:hover {
+    color: var(--primary-color-1);
+    background-color: var(--primary-color-2);
+    transition: linear 0.5s;
+}
+
 .header .inner-wrap .inner-logo {
     width: 80px;
     height: 80px;
@@ -111,6 +126,47 @@
     transition: linear 0.5s;
 }
 
+@media (max-width: 1199.98px) {
+    /* Code… */
+    .header .inner-wrap .inner-list-nav a {
+        font-size: 16px;
+        padding: 30px 12px;
+    }
+   }
+   /* Kích thước nhỏ hơn 992px */
+   @media (max-width: 991.98px) {
+    /* Code… */
+    .header {
+        padding: 0px;
+    }
+    .header .inner-wrap .inner-list-nav {
+        display: none;
+    }
+
+    .header .inner-wrap .inner-header-bar {
+        display: block;
+    }
+
+    .header .inner-wrap .inner-header-bar a{
+        display: inline-block;
+        font-size: 28px;
+        padding: 5px 15px;
+        border-radius: 5px;
+    }
+
+    .header .inner-wrap .inner-list-user li:nth-child(1) {
+        display: none;
+    }
+
+    .header .inner-wrap .inner-list-user li:nth-child(3) {
+        display: none;
+    }
+
+    .header .inner-wrap .inner-logo{
+        text-align: center;
+    }
+   }
+
 /*End Header */
 
 /* section one */
@@ -138,6 +194,23 @@
     font-size: 22px;
     margin-bottom: 40px;
 }
+
+@media (max-width: 767.98px) {
+
+
+    .section-one .inner-wrap .inner-content .inner-title {
+        font-size: 50px;
+    }
+}
+
+   /* Kích thước nhỏ hơn 576px */
+@media (max-width: 575.98px) {
+    .section-one .inner-wrap .inner-content {
+        text-align: center;
+    }
+}
+
+
 /* End section one */
 /*  section two */
  .section-two {
@@ -168,7 +241,8 @@
     width: 100%;
     border-radius: 5px;
     transition: linear 0.3s;
-
+    height: 100%;
+    object-fit: cover;
  }
 
  .section-two .inner-wrap .inner-item .inner-box {
@@ -193,6 +267,37 @@
     border: none;
  }
 
+ @media (max-width: 991.98px) {
+    /* Code… */
+    .section-two .inner-wrap .inner-item .inner-box {
+        width: 100%;
+    }
+}
+@media (max-width: 767.98px) {
+    .section-two .inner-wrap .inner-item {
+        max-width: 100%;
+    }
+
+    .section-two .inner-wrap .inner-item:nth-child(1) {
+        margin-bottom: 30px;
+    }
+
+    .section-two .inner-wrap .inner-item .inner-box .inner-title {
+        font-size: 34px;
+        margin-bottom: 30px;
+    }
+
+    .section-two .inner-wrap .inner-item .inner-box .inner-desc {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .section-two .inner-wrap .inner-item .inner-box .button {
+        font-size: 17px;
+        padding: 10px 24px;
+    }
+}
+
 
 /* End section two */
 /*  section three */
@@ -211,6 +316,7 @@
     border-radius: 10px;
     padding: 0px;
     width: 40%;
+    flex: 1;
 }
 
 
@@ -223,7 +329,7 @@
 
 .section-three .inner-wrap .inner-content {
     text-align: center;
-
+    margin-left: 5%;
 }
 
 .section-three .inner-wrap .inner-content .inner-title {
@@ -259,6 +365,7 @@
     border-radius: 10px;
     padding: 0px;
     width: 40%;
+    flex: 1;
 }
 
 
@@ -272,7 +379,7 @@
 
 .section-four .inner-wrap .inner-content {
     text-align: center;
-
+    margin-right: 5%;
 }
 
 .section-four .inner-wrap .inner-content .inner-title {
@@ -1561,8 +1668,8 @@
 /* PRODUCT INFORMATION */
 /* * <!--Đăng Nhập và Đăng Ký--> */
 .logo1{
-    height: 120px;
-     width: 120px;
+    height: 100px;
+     width: 100px;
 }
 
 .vetrangchu{
@@ -1585,14 +1692,14 @@
 }
 .chung{
     display: inline-block;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 .tieude{
     display: block;
     width: 100%;
     text-align: left;
-    margin-left: 70px;  
-    height: 25px;
+    margin-left: 80px;  
+    height: 25px;   
 }
 .sizetieude1{
     font-size: 38px;
@@ -1637,11 +1744,25 @@
     height: 30px;
     padding-right: 10px;
 }
+
+.checkbox{
+    margin:-10px auto;
+}
+.tieude label{
+    font-size: 18px;
+    font-weight: 550;
+}
+.tieudebonus{
+    margin-bottom: -10px;
+    margin-top: 20px;
+}
+
 /* <!--End Đăng Nhập và Đăng Ký--> */
 
 /* Gioi Thieu */
 .vct {
-    font-family: "Inter", sans-serif;
+
+    /* font-family: "Inter", sans-serif; */
     font-optical-sizing: auto;
     font-style: normal;
     margin-top: 40px;
@@ -1651,31 +1772,106 @@
     border: 2px solid white;
 }
 
-.gt12, .gpkd {
-    font-family: "Inter", sans-serif;
+.gt12 {
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 80px;
-    margin-right: 80px;
-    font-size: 17px;
+    margin-left: 120px;
+    font-size: 18.5px;
     border: 2px solid white;
+    text-align: justify;
 }
 
 .hinha1 {
     display: flex;
     margin-left: auto;
-    margin-right: auto;
-    width: 600px;
-    height: 500px;
+    margin-right: 120px;
+    width: 550px;
+    height: 400px;
+    margin-bottom: 20px;
 }
+
+.chiacot {
+    column-count: 2;
+    break-before: column;
+}
+
+.bosuutap {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 40px;
+    border: 2px solid white;
+}
+
+.ngayphunu {
+    margin: 10px;
+    border: 1px solid #5B3724;
+    width: 25%;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 90px;
+    /* box-shadow: 5px 5px 10px #C09B81; */
+}
+
+.hinhngayphunu {
+    display: flex;
+    width: 350px;
+    height: 350px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.catinh {
+    margin: 10px;
+    border: 1px solid #5B3724;
+    width: 25%;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 90px;
+}
+
+.hinhcatinh {
+    display: flex;
+    width: 350px;
+    height: 350px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.hinhphongcach {
+    display: flex;
+    width: 350px;
+    height: 350px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.phongcach {
+    margin: 10px;
+    border: 1px solid #5B3724;
+    width: 25%;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 90px;
+}
+
+.gioithieu3cai {
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between;     */
+    margin-bottom: 30px; 
+} 
 
 /* End Gioi Thieu */
 
 /* Lien He */
-.lienhe1     {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+.lienhe1 {
     margin-top: 40px;
     margin-bottom: 30px;
     text-align: center;
@@ -1699,7 +1895,6 @@
 }
 
 .chu1 {
-    font-family: "Inter", sans-serif;
     font-size: 17px;
     color: #5B3724;
     margin-top: -30px;
@@ -1715,15 +1910,12 @@
 }
 
 .chu2 {
-    font-family: "Inter", sans-serif;
     font-size: 17px;
     color: #5B3724;
     margin-top: -15px;
 }
 
 .cauhoilh {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
     font-style: normal;
     margin-top: 40px;
     margin-bottom: 30px;
@@ -1733,7 +1925,6 @@
 }
 
 .cauhoilh12 {
-    font-family: "Inter", sans-serif;
     width: 30.2%;
     padding: 10px;
     margin: 10px;
@@ -1743,7 +1934,6 @@
 }
 
 .cauhoichude {
-    font-family: "Inter", sans-serif;
     width: 62%;
     padding: 10px;
     margin: 10px;
@@ -1753,16 +1943,13 @@
 }
 
 .vietcmt {
-    font-family: "Inter", sans-serif;
     width: 62%;
-    padding: 100px;
     margin: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    text-align: left;
-    vertical-align: top;
     height: 100px;  
+    padding: 5px;
 }
 
 .nutgui {
