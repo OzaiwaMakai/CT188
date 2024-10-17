@@ -1700,7 +1700,9 @@
     width: 100%;
     text-align: left;
     margin-left: 80px;  
-    height: 25px;   
+    height: 25px;
+    margin-bottom: 4px;
+    margin-top: 6px;
 }
 .sizetieude1{
     font-size: 38px;
@@ -1713,15 +1715,18 @@
     padding: 9px;
 }
 .nutdangky{
+    margin-top: -8px;
+}
+.nutdangky1{
     text-align: center;
-    margin: 20px;
+    margin: 30px;
     border-radius: 10px;
     padding: 5px;
     width: 420px;
     background-color: #DBD5CB;
     color: #5B3724;
 }
-.nutdangky:hover{
+.nutdangky1:hover{
     color: #fff;
     background-color: #5B3724;
 }
@@ -1729,7 +1734,7 @@
     border-bottom: 1px solid;
 }
 .icon{
-    margin: 20px;   
+    margin: 10px;   
 }
 .icon a{
     text-decoration: none;
@@ -1752,10 +1757,7 @@
 .tieude label{
     font-size: 18px;
     font-weight: 550;
-}
-.tieudebonus{
-    margin-bottom: -10px;
-    margin-top: 20px;
+
 }
 
 /* <!--End Đăng Nhập và Đăng Ký--> */
@@ -1810,7 +1812,6 @@
     width: 30%;
     padding: 5px;
     border-radius: 5px;
-    /* margin-left: 90px; */
     /* box-shadow: 5px 5px 10px #C09B81; */
 }
 
@@ -1830,7 +1831,6 @@
     width: 30%;
     padding: 5px;
     border-radius: 5px;
-    /* margin-left: 90px; */
 }
 
 .hinhcatinh {
@@ -1859,7 +1859,6 @@
     width: 30%;
     padding: 5px;
     border-radius: 5px;
-    /* margin-left: 90px; */
 }
 
 .gioithieu3cai {
@@ -1868,6 +1867,10 @@
     justify-content: space-between;    
     margin-bottom: 30px; 
 } 
+
+.tieudegioithieu {
+    font-size: 19px;
+}
 
 /* End Gioi Thieu */
 
