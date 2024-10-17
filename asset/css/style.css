@@ -154,6 +154,11 @@
         border-radius: 5px;
     }
 
+    .header .inner-wrap .inner-list-user {
+        margin-right: 15px;
+        padding-right: 0px;
+    }
+
     .header .inner-wrap .inner-list-user li:nth-child(1) {
         display: none;
     }
@@ -349,6 +354,32 @@
 }
 
 
+@media (max-width: 767.98px) {
+    .section-three .inner-wrap .inner-image {
+        margin-bottom: 30px;
+    }
+
+    .section-three .inner-wrap .inner-content {
+        padding: 0px;
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    .section-three .inner-wrap .inner-content .inner-title {
+        font-size: 38px;
+    }
+
+    .section-three .inner-wrap .inner-content .inner-desc {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .section-three .inner-wrap .inner-content .button {
+        font-size: 18px;
+    }
+}
+
 /* End section three */
 .section-four {
     background-color: #f6f5f3;
@@ -396,6 +427,32 @@
 .section-four .inner-wrap .inner-content .button {
     padding: 12px 30px;
     font-size: 22px;
+}
+
+@media (max-width: 767.98px) {
+    .section-four .inner-wrap .inner-image {
+        margin-bottom: 30px;
+        order: 1;
+    }
+
+    .section-four .inner-wrap .inner-content {
+        order: 2;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .section-four .inner-wrap .inner-content .inner-title {
+        font-size: 38px;
+    }
+
+    .section-four .inner-wrap .inner-content .inner-desc {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .section-four .inner-wrap .inner-content .button {
+        font-size: 18px;
+    }
 }
 
 /* Section five */
@@ -458,6 +515,28 @@
     margin-bottom: 20px;
 }
 
+@media (max-width: 991.98px) {
+    /* Code… */
+
+    .section-five .inner-wrap .inner-list {
+        justify-content: space-around;
+    }
+
+    .section-five .inner-wrap .inner-list .inner-item {
+        max-width: none;
+        margin-right: -15px;
+    }
+    
+}
+   /* Kích thước nhỏ hơn 768px */
+@media (max-width: 767.98px) {
+   
+}
+   /* Kích thước nhỏ hơn 576px */
+@media (max-width: 575.98px) {
+   
+}
+
 /* End Section five */
 
 /*  Section six */
@@ -495,6 +574,36 @@
 .section-six .inner-wrap .inner-image img {
     width: 100%;
     border-radius: 5px;
+
+}
+
+@media (max-width: 991.98px) {
+    /* Code… */
+    .section-six .inner-wrap .inner-image {
+        order: 1;
+        margin-bottom: 30px;
+        padding: 0px;
+    }
+
+    .section-six .inner-wrap .inner-content {
+        order: 2;
+    }
+}
+   /* Kích thước nhỏ hơn 768px */
+@media (max-width: 767.98px) {
+    .section-six .inner-wrap .inner-content {
+        text-align: center;
+    }
+    .section-six .inner-wrap .inner-content .inner-title {
+        font-size: 50px;
+    }
+
+    .section-six .inner-wrap .inner-content .inner-desc {
+        font-size: 18px;
+    }
+}
+   /* Kích thước nhỏ hơn 576px */
+@media (max-width: 575.98px) {
 
 }
 /* End Section six */
@@ -579,7 +688,7 @@
 
 .section-seven .inner-list .inner-item .inner-wrap .inner-rate i {
     color: #ffc107;
-    font-size: 20px;
+    font-size: 19px;
 }
 
 .section-seven .inner-list .inner-item .inner-comment {
