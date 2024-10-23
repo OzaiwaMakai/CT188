@@ -1,3 +1,5 @@
+// Đăng Ký
+
 function formValidate() {
     var email = document.getElementById("Email");
     var req = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
@@ -15,3 +17,5 @@ function dangky() {
         alert("Đăng ký thành công!");
     }
 }
+
+// Đăng Ký
