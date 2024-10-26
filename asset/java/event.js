@@ -34,7 +34,25 @@ function dangky() {
 
 //Lien He
 function nutGui() {
-    alert("Nội dung đã được gửi!");
+    const input1 = document.getElementById("lienheten").value.trim();
+    const input2 = document.getElementById("lienheemail").value.trim();
+    const input3 = document.getElementById("lienhechude").value.trim();
+    const cmt = document.getElementById("lienhecmt").value.trim();
+
+    if (input1 != "" && input2 != "" && input3 != "" && cmt != "") {
+        alert("Nội dung đã được gửi!");
+        document.getElementById("lienheten").value = "";
+        document.getElementById("lienheemail").value = "";
+        document.getElementById("lienhechude").value = "";
+        document.getElementById("lienhecmt").value = "";
+    }
+    else {
+        alert("Vui lòng nhập đầy đủ các thông tin yêu cầu!");
+        document.getElementById("lienheten").value = "";
+        document.getElementById("lienheemail").value = "";
+        document.getElementById("lienhechude").value = "";
+        document.getElementById("lienhecmt").value = "";
+    }
 
     document.getElementById("lienheten").value = "";
     document.getElementById("lienheemail").value = "";
