@@ -41,8 +41,40 @@ function dangky() {
     return true;
 }
 
+<<<<<<< HEAD
 function chuyenhuong(){
     window.location.href = 'dangnhap.html';
 }
+=======
+// Đăng Ký
+>>>>>>> 6f8caaae0b35bb6d26ccc0c9c4f40e4e9b2cc3a2
 
 // Đăng Ký và đăng nhập
+
+//Lien He
+function nutGui() {
+    const input1 = document.getElementById("lienheten").value.trim();
+    const input2 = document.getElementById("lienheemail").value.trim();
+    const input3 = document.getElementById("lienhechude").value.trim();
+    const cmt = document.getElementById("lienhecmt").value.trim();
+
+    if (input1 != "" && input2 != "" && input3 != "" && cmt != "") {
+        alert("Nội dung đã được gửi!");
+        document.getElementById("lienheten").value = "";
+        document.getElementById("lienheemail").value = "";
+        document.getElementById("lienhechude").value = "";
+        document.getElementById("lienhecmt").value = "";
+    }
+    else {
+        alert("Vui lòng nhập đầy đủ các thông tin yêu cầu!");
+        document.getElementById("lienheten").value = "";
+        document.getElementById("lienheemail").value = "";
+        document.getElementById("lienhechude").value = "";
+        document.getElementById("lienhecmt").value = "";
+    }
+
+    document.getElementById("lienheten").value = "";
+    document.getElementById("lienheemail").value = "";
+    document.getElementById("lienhechude").value = "";
+    document.getElementById("lienhecmt").value = "";
+}
