@@ -41,13 +41,10 @@ function dangky() {
     return true;
 }
 
-<<<<<<< HEAD
+
 function chuyenhuong(){
     window.location.href = 'dangnhap.html';
 }
-=======
-// Đăng Ký
->>>>>>> 6f8caaae0b35bb6d26ccc0c9c4f40e4e9b2cc3a2
 
 // Đăng Ký và đăng nhập
 
