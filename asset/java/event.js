@@ -1,7 +1,15 @@
 // Đăng Ký và đăng nhập
 
 function dangnhap(){
-    alert("Đăng nhập thành công!");
+    if(formValidate()){
+        alert("Đăng nhập thành công!");
+        chuyenhuongtrangchu();
+    }
+    return true;
+}
+
+function chuyenhuongtrangchu(){
+    window.location.href = 'index.html';
 }
 
 
@@ -36,13 +44,13 @@ function testpass(){
 function dangky() {
     if (formValidate() && testpass()) {
         alert("Đăng ký thành công!");
-        chuyenhuong();
+        chuyenhuongdangnhap();
     }
     return true;
 }
 
 
-function chuyenhuong(){
+function chuyenhuongdangnhap(){
     window.location.href = 'dangnhap.html';
 }
 
