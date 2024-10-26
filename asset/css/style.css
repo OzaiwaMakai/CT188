@@ -659,13 +659,14 @@
     border-radius: 50%;
 }
 
-.section-seven .inner-list .inner-item .inner-wrap .inner-info  .inner-customer {
+.section-seven .inner-list .inner-item  .inner-customer {
     margin-left: 30px;
     position: relative;
     font-weight: 600;
+    margin-bottom: 20px;
 }
 
-.section-seven .inner-list .inner-item .inner-wrap .inner-info  .inner-customer::before {
+.section-seven .inner-list .inner-item  .inner-customer::before {
     content: "";
     height: 100%;
     width: 5px;
@@ -676,11 +677,11 @@
 }
 
 
-.section-seven .inner-list .inner-item .inner-wrap .inner-info  .inner-customer .inner-name {
-    font-size: 19px;
+.section-seven .inner-list .inner-item  .inner-customer .inner-name {
+    font-size: 22px;
 }
 
-.section-seven .inner-list .inner-item .inner-wrap .inner-info  .inner-customer .inner-role {
+.section-seven .inner-list .inner-item .inner-customer .inner-role {
     margin: 0px;
     color: var(--primary-color-2);
     font-weight: 500;
@@ -700,6 +701,21 @@
     font-size: 18px;
 }
 
+@media (max-width: 991.98px) {
+    /* Code… */
+    
+}
+   /* Kích thước nhỏ hơn 768px */
+@media (max-width: 767.98px) {
+
+    .section-seven .inner-list .inner-item .inner-wrap .inner-rate {
+        margin-top: 10px;
+    }
+}
+   /* Kích thước nhỏ hơn 576px */
+@media (max-width: 575.98px) {
+   
+}
 
 
 
@@ -775,6 +791,12 @@
 .footer .inner-right {
     text-align: center;
     margin: 0px;
+}
+
+@media (max-width: 767.98px) {
+    .footer .inner-list {
+        text-align: center;
+    }
 }
 
  /* End Footer */
@@ -1611,6 +1633,14 @@
     .product__info .inner-wrap .image__size {
         height: 60vh;
     }
+
+    .product__info .product__content .product__price {
+        padding: 10px 0;
+    }
+    
+    .product__info .product__content .product__price span {
+        font-size: 26px;
+    }
 }
 
 
@@ -1746,6 +1776,10 @@
         margin: 18px 0 0;
         max-width: 100%;
     }
+
+    .product__ratings .overview__star {
+        margin-left: 8px;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -1814,6 +1848,14 @@
 .pagination--customer__cmt {
     margin-top: 28px;
 }
+
+@media (max-width: 767.98px) {
+   .customer_cmt .customer_cmt-main .customer__comment {
+        margin: 0;
+   }
+}
+
+
 /* RATING */
 /* SẢN PHẨM TƯƠNG TỰ */
 .model__slide {
@@ -1870,6 +1912,15 @@
     border-radius: 50%;
     transform: translateY(-50%);
 }
+
+@media (max-width: 767.98px) {
+    .slide .card__wrapper .card {
+    margin: 0 8px;
+    width: calc(100% / 2);
+}
+}
+
+
 /* SẢN PHẨM TƯƠNG TỰ */
 /* PRODUCT INFORMATION */
 /* * <!--Đăng Nhập và Đăng Ký--> */

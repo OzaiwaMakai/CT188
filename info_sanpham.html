@@ -171,31 +171,31 @@
             <div class="container">
                 <div class="row inner-wrap">
                     <div class="col-12">
-                            <h2 class="rating__title">Đánh giá sản phẩm</h2>
-                            <div class="row rating__overview">
-                                <div class="col-md-6 col-sm-12 overview__star">
-                                    <div class="star__icon">
-                                        <span>5.0</span>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                                    <span class="number__rating">Tổng cộng 2 đánh giá từ khách hàng</span>
+                        <h2 class="rating__title">Đánh giá sản phẩm</h2>
+                        <div class="row rating__overview">
+                            <div class="col-md-6 col-sm-12 overview__star">
+                                <div class="star__icon">
+                                    <span>5.0</span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
                                 </div>
-                                <div class="col-md-6 col-sm-12 overview__menu">
-                                    <div class="overview__menu--filer">Tất cả</div>
-                                    <div class="overview__menu--filer">5 Sao (2)</div>
-                                    <div class="overview__menu--filer">4 Sao</div>
-                                    <div class="overview__menu--filer">3 Sao</div>
-                                    <div class="overview__menu--filer">2 Sao</div>
-                                    <div class="overview__menu--filer">1 Sao</div>
-                                    <div class="overview__menu--filer">Có Bình Luận (2)</div>
-                                    <div class="overview__menu--filer">Có Hình Ảnh / Video</div>
-                                </div>
+                                <span class="number__rating">Tổng cộng 2 đánh giá từ khách hàng</span>
+                            </div>
+                            <div class="col-md-6 col-sm-12 overview__menu">
+                                <div class="overview__menu--filer">Tất cả</div>
+                                <div class="overview__menu--filer">5 Sao (2)</div>
+                                <div class="overview__menu--filer">4 Sao</div>
+                                <div class="overview__menu--filer">3 Sao</div>
+                                <div class="overview__menu--filer">2 Sao</div>
+                                <div class="overview__menu--filer">1 Sao</div>
+                                <div class="overview__menu--filer">Có Bình Luận (2)</div>
+                                <div class="overview__menu--filer">Có Hình Ảnh / Video</div>
                             </div>
                         </div>
+                    </div>
                 </div>
                 <div class="row inner-wrap">
                         <div class="col-12">
@@ -439,7 +439,7 @@
             var swiper = new Swiper(".mySwiper", {
             loop: true,
             spaceBetween: 10,
-            slidesPerView: 4,
+            slidesPerView: 2,
             freeMode: true,
             watchSlidesProgress: true,
             });
@@ -454,6 +454,10 @@
                 swiper: swiper,
             },
             });
+
+            if(window.innerWidth <= 768) {
+                
+            }
         </script>
 
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
