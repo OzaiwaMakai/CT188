@@ -34,12 +34,12 @@ function dangky() {
 
 //Lien He
 function nutGui() {
-    const input1 = document.getElementById("lienheten").value.trim();
-    const input2 = document.getElementById("lienheemail").value.trim();
-    const input3 = document.getElementById("lienhechude").value.trim();
-    const cmt = document.getElementById("lienhecmt").value.trim();
+    var tenlh = document.getElementById("lienheten").value.trim();
+    var emaillh = document.getElementById("lienheemail").value.trim();
+    var chudelh = document.getElementById("lienhechude").value.trim();
+    var cmt = document.getElementById("lienhecmt").value.trim();
 
-    if (input1 != "" && input2 != "" && input3 != "" && cmt != "") {
+    if (tenlh !== "" && emaillh !== "" && chudelh !== "" && cmt !== "") {
         alert("Nội dung đã được gửi!");
         document.getElementById("lienheten").value = "";
         document.getElementById("lienheemail").value = "";
