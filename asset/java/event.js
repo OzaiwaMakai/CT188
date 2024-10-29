@@ -110,3 +110,8 @@ function nutGui() {
     document.getElementById("lienhechude").value = "";
     document.getElementById("lienhecmt").value = "";
 }
+
+//Ket Thuc Lien He
+
+
+// SanPham_Vang
