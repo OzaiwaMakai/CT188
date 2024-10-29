@@ -50,9 +50,7 @@ function dangky() {
 }
 
 
-<<<<<<< HEAD
 // Đăng Ký và đăng nhập
-=======
 function chuyenhuongdangnhap(){
     window.location.href = 'dangnhap.html';
 }
@@ -112,4 +110,3 @@ function nutGui() {
     document.getElementById("lienhechude").value = "";
     document.getElementById("lienhecmt").value = "";
 }
->>>>>>> 01da69d4be484d859d41250305e4fae15a553730
