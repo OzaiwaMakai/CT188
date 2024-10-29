@@ -50,6 +50,7 @@ function dangky() {
 }
 
 
+// Đăng Ký và đăng nhập
 function chuyenhuongdangnhap(){
     window.location.href = 'dangnhap.html';
 }
