@@ -2120,9 +2120,8 @@
     margin: 10px;
     border: 1px solid #5B3724;
     width: 30%;
-    padding: 5px;
-    border-radius: 5px;
-    /* box-shadow: 5px 5px 10px #C09B81; */
+    padding-top: 5px;
+    border-radius: 20px;
 }
 
 .hinhngayphunu {
@@ -2132,15 +2131,17 @@
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
+    margin-top: -5px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .catinh {
     margin: 10px;
     border: 1px solid #5B3724;
     width: 30%;
-    padding: 5px;
-    border-radius: 5px;
+    padding-top: 5px;
+    border-radius: 20px;
 }
 
 .hinhcatinh {
@@ -2151,6 +2152,9 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: -5px;
 }
 
 .hinhphongcach {
@@ -2161,14 +2165,17 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: -5px;
 }
 
 .phongcach {
     margin: 10px;
     border: 1px solid #5B3724;
     width: 30%;
-    padding: 5px;
-    border-radius: 5px;
+    padding-top: 5px;
+    border-radius: 20px;
 }
 
 .gioithieu3cai {
@@ -2179,9 +2186,18 @@
 } 
 
 .tieudegioithieu {
-    font-size: 19px;
+    font-size: 17px;
+    margin-left: 5px;
 }
 
+.inputpd{
+    position: relative;
+}
+.inputpd span{
+    position: absolute;
+    right: 92px;
+    top: 12px;
+}
 /* End Gioi Thieu */
 
 /* Lien He */
@@ -2272,15 +2288,21 @@
     margin: 10px;
     background-color: #5B3724;
     color: white;
-    border: none;
+    border: 1px solid #5B3724;
     border-radius: 4px;
     font-size: 17px;
     cursor: pointer;
     display: inline-block;
+    transition: linear 0.5s;
 }
 
 .nutgui:hover {
-    background-color: #555;
+    background-color: white;
+    color: #5B3724;
+}
+
+.dinhdangnutgui {
+    padding-bottom: 60px;
 }
 
 .toanbo1 {
