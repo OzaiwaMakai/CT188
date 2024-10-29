@@ -54,6 +54,32 @@ function chuyenhuongdangnhap(){
     window.location.href = 'dangnhap.html';
 }
 
+function anhienmatkhau(){
+    const trangthai = document.getElementById("taomatkhau");
+    const thaydoitrangthai = document.querySelector("#thaydoitrangthai i");
+    if(trangthai.type === "password"){
+        trangthai.type = "text";
+        thaydoitrangthai.classList.remove("fa-eye");
+        thaydoitrangthai.classList.add("fa-eye-slash")
+    }else{
+        trangthai.type = "password";
+        thaydoitrangthai.classList.remove("fa-eye-slash")
+        thaydoitrangthai.classList.add("fa-eye");
+    }
+}
+function anhienmatkhau1(){
+    const trangthai = document.getElementById("nhaplaimatkhau");
+    const thaydoitrangthai = document.querySelector("#thaydoitrangthai1 i");
+    if(trangthai.type === "password"){
+        trangthai.type = "text";
+        thaydoitrangthai.classList.remove("fa-eye");
+        thaydoitrangthai.classList.add("fa-eye-slash")
+    }else{
+        trangthai.type = "password";
+        thaydoitrangthai.classList.remove("fa-eye-slash")
+        thaydoitrangthai.classList.add("fa-eye");
+    }
+}
 // Đăng Ký và đăng nhập
 
 //Lien He
