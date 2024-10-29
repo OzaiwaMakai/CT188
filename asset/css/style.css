@@ -2128,6 +2128,14 @@
     font-size: 19px;
 }
 
+.inputpd{
+    position: relative;
+}
+.inputpd span{
+    position: absolute;
+    right: 92px;
+    top: 12px;
+}
 /* End Gioi Thieu */
 
 /* Lien He */

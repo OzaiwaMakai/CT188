@@ -54,6 +54,24 @@ function chuyenhuongdangnhap(){
     window.location.href = 'dangnhap.html';
 }
 
+function anhienmatkhau(){
+    const trangthai = document.getElementById("taomatkhau");
+    if(trangthai.type === "password"){
+        trangthai.type = "text";
+    }else{
+        trangthai.type = "password";
+    }
+}
+function anhienmatkhau1(){
+    const trangthai = document.getElementById("nhaplaimatkhau");
+    if(trangthai.type === "password"){
+        trangthai.type = "text";
+    }else{
+        trangthai.type = "password";
+    }
+}
+
+
 // Đăng Ký và đăng nhập
 
 //Lien He
