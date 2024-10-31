@@ -1564,9 +1564,9 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    /* justify-content: space-evenly; */
+    /* justify-content: space-between; */
     margin-top: 25px;
-    padding-left: 16px;
+    padding: 0 16px;
     width: 100%;
 }
 
@@ -1575,8 +1575,7 @@
     border: 1px solid var(--text-second-color);
     color: var(--primary-color-2);
     background-color: var(--primary-color-1);
-    width: 210px;
-    height: 50px;
+    padding: 15px 0;
     border-radius: 8px; 
     margin-right: 20px;
     transition: all 0.15s ease-in;
@@ -1593,9 +1592,7 @@
     text-decoration: none;
     color: var(--primary-color-1);
     background-color: var(--primary-color-2);
-    width: 210px;
-    height: 50px;
-    line-height: 48px;
+    padding: 15px 0;
     text-align: center;
     border-radius: 8px;
 }
@@ -1630,6 +1627,7 @@
         justify-content: space-between;
         padding: 0 15px;
         margin-top: 15px;
+        align-items: center;
     }
 
     .product__info .product__btn .product--add-cart, 
@@ -1640,7 +1638,7 @@
         height: 50px;
     }
     .product__info .product__btn .product--buy {
-        margin-top: 15px;
+        /* margin-top: 10px; */
     }
 }
 
@@ -1657,6 +1655,7 @@
     .product__info .product__btn .product--buy {
         padding: 0;
         max-width: 100%;
+        margin-bottom: 20px;
     }
 }
 
@@ -1915,12 +1914,15 @@
 .slide .card__wrapper .card {
     margin: 0 8px;
     width: calc(100% / 4);
+
 }
 
 
 .card .card-image {
     height: 300px;
-    width: 260px;
+    /* width: 260px; */
+    /* height: 100%; */
+    width: 100%;
     display: flex;
     align-items: center;
     justify-items: center;
@@ -1967,11 +1969,21 @@
     transform: translateY(-50%);
 }
 
-@media (max-width: 767.98px) {
-    .slide .card__wrapper .card {
-    margin: 0 8px;
-    width: calc(100% / 2);
+@media (max-width: 991.98px) {
+    .card .card-image {
+        height: 200px;
+    }
+    .card .card-body .card-title, 
+    .card .card-body .card_price {
+        font-size: 16px;
+    }
 }
+
+
+@media (max-width: 767.98px) {
+    .model__slide {
+        display: none;
+    }
 }
 
 
