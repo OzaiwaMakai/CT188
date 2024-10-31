@@ -239,7 +239,11 @@ function showCart() {
           nameCell.style.textAlign="center";
           priceCell.innerHTML=formatter.format(item.price);
           priceCell.style.textAlign="center";
-          numCell.innerHTML=num;
+          numCell.innerHTML = `
+            <button class = 'button' onclick="decreaseQuantity('${localStorage.key(i)}')">-</button>
+            ${num}
+            <button class = 'button' onclick="increaseQuantity('${localStorage.key(i)}')">+</button>
+            `;
           numCell.style.textAlign="center";
           sum = num*item.price;
           sumCell.innerHTML=formatter.format(sum);
@@ -282,6 +286,30 @@ function showCart() {
           alert("Đã xóa sản phẩm " + name + " khỏi giỏ hàng thành công!");
       }
   }
+    //   Tăng giảm số lượng sản phẩm
+    function increaseQuantity(code) {
+    var currentQuantity = parseInt(localStorage.getItem(code)) || 0
+    if (currentQuantity < 100) {
+        // Giới hạn tối đa 100 sản phẩm
+        localStorage.setItem(code, currentQuantity + 1)
+        showCart() // Cập nhật lại giỏ hàng sau khi tăng số lượng
+    } else {
+        alert('Mỗi sản phẩm chỉ có thể đặt tối đa 100 sản phẩm!')
+    }
+    }
+
+    function decreaseQuantity(code) {
+    var currentQuantity = parseInt(localStorage.getItem(code)) || 0
+    if (currentQuantity > 1) {
+        // Giới hạn tối thiểu 1 sản phẩm
+        localStorage.setItem(code, currentQuantity - 1)
+    } else {
+        removeCart(code) // Xóa sản phẩm khỏi giỏ hàng nếu số lượng là 0
+    }
+    showCart() // Cập nhật lại giỏ hàng sau khi giảm số lượng
+    }
+
+
   // HÀM HIỆN HỘP THOẠI XÁC NHẬN ĐẶT HÀNG
   function confirmPurchase(){
       if (confirm("Vui lòng kiểm tra lại thông tin giao hàng cũng như đơn hàng trước khi đặt hàng. Sau khi kiểm tra, vui lòng nhấn OK để xác nhận.")) {
