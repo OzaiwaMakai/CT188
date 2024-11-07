@@ -1041,8 +1041,6 @@
     justify-content: space-between;
 }
 
-
-
 .select-input.btn_show {
     display: block;
 }
@@ -1077,21 +1075,6 @@
     background-color: var(--primary-color-2);
     color: var(--primary-color-1);
 }
-
-/* .btn.btn-select {
-    padding: 0;
-    background-color: #fff;
-    border: none;
-    color: var(--primary-color-2);
-    outline: none;
-}
-
-.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
-    background-color: transparent;
-    border: none;
-    outline: none;
-} */
-
 
 /* list option */
 
@@ -1139,6 +1122,39 @@
 .home-filter__page-icon {
     margin: auto;
     font-size: 14px;
+}
+
+@media (max-width: 991.98px) {
+    .home-filter__page {
+        display: none;
+    }
+    
+}
+
+@media (max-width: 767.98px) {
+    .home-filter__label {
+        margin-right: 5px;
+    }
+
+    .good_container .home-filter {
+        flex-wrap: wrap;
+    }
+    .home-filter__btn {
+        margin: 0 0 0 20px;
+    }
+    .select-input {
+        margin: 20px 0 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .home-filter__btn {
+        margin: 10px 0 0 5px;
+    }
+
+    .select-input {
+        margin: 10px 0 0 15px;
+    }
 }
 
 /* san pham */
