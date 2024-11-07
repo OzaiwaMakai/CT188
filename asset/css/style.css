@@ -2060,7 +2060,7 @@
     margin: 30px;
     border-radius: 10px;
     padding: 5px;
-    width: 420px;
+    width: 430px;
     background-color: #DBD5CB;
     color: #5B3724;
 }
@@ -2137,8 +2137,8 @@
 }
 
 .bosuutap {
-    margin-top: 40px;
-    margin-bottom: 10px;
+    margin-top: 150px;
+    margin-bottom: 40px;
     text-align: center;
     font-size: 40px;
     border: 2px solid white;
@@ -2146,7 +2146,7 @@
 
 .ngayphunu {
     margin: 10px;
-    border: 1px solid #5B3724;
+    border: 1px solid #DBD5CB;
     width: 30%;
     padding-top: 5px;
     border-radius: 20px;
@@ -2166,7 +2166,7 @@
 
 .catinh {
     margin: 10px;
-    border: 1px solid #5B3724;
+    border: 1px solid #DBD5CB;
     width: 30%;
     padding-top: 5px;
     border-radius: 20px;
@@ -2200,7 +2200,7 @@
 
 .phongcach {
     margin: 10px;
-    border: 1px solid #5B3724;
+    border: 1px solid #DBD5CB;
     width: 30%;
     padding-top: 5px;
     border-radius: 20px;
@@ -2210,7 +2210,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;    
-    margin-bottom: 30px; 
+    margin-bottom: 150px; 
 } 
 
 .tieudegioithieu {
@@ -2330,7 +2330,7 @@
 }
 
 .dinhdangnutgui {
-    padding-bottom: 60px;
+    padding-bottom: 150px;
 }
 
 .toanbo1 {
