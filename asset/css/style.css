@@ -1917,8 +1917,7 @@
 
 }
 
-
-.card .card-image {
+.card .card-image { 
     height: 300px;
     /* width: 260px; */
     /* height: 100%; */
