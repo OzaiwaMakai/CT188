@@ -1,29 +1,30 @@
 // Đăng Ký và đăng nhập
 
 function dangnhap(){
-    if(formValidate()){
+  if(formValidate()) {
+    var saveEmail = window.localStorage.getItem('Email');
+    var savePass = window.localStorage.getItem('matkhau');
+    var email = document.getElementById("Email").value;
+    var matkhau = document.getElementById("taomatkhau").value;
+    if (email === saveEmail && matkhau === savePass) {
         alert("Đăng nhập thành công!");
-        chuyenhuongtrangchu();
+        window.location.href = 'index.html';
+    } else {
+        alert("Email hoặc mật khẩu không đúng");
     }
-    return true;
 }
-
-function chuyenhuongtrangchu(){
-    window.location.href = 'index.html';
+return true;
 }
-
 
 function formValidate() {
     var email = document.getElementById("Email");
     var req = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
     var matkhau = document.getElementById("taomatkhau");
     var req1 = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/g;
-    // Kiểm tra email hợp lệ
     if (req.test(email.value) == false) {
         alert("Vui lòng nhập email hợp lệ");
         return false;
     }
-    
     if(req1.test(matkhau.value)==false){
         alert("Mật khẩu tối thiểu 8 ký tự, ít nhất 1 chữ cái viết hoa, 1 chữ cái viết thường, 1 số và 1 ký tự đặc biệt");
         return false;
@@ -38,22 +39,20 @@ function testpass(){
         alert("Vui lòng nhập đúng mật khẩu");
         return false;
     }
+    window.localStorage.setItem('matkhau',matkhau);
     return true;
 }
 
 function dangky() {
-    if (formValidate() && testpass()) {
-        alert("Đăng ký thành công!");
-        chuyenhuongdangnhap();
-    }
-    return true;
+  if (formValidate() && testpass()) {
+      var email = document.getElementById("Email").value;
+      window.localStorage.setItem('Email', email);
+      alert("Đăng ký thành công!");
+      window.location.href = 'dangnhap.html';
+  }
+  return false;
 }
 
-
-// Đăng Ký và đăng nhập
-function chuyenhuongdangnhap(){
-    window.location.href = 'dangnhap.html';
-}
 
 function anhienmatkhau(){
     const trangthai = document.getElementById("taomatkhau");
@@ -81,6 +80,7 @@ function anhienmatkhau1(){
         thaydoitrangthai.classList.add("fa-eye");
     }
 }
+
 // Đăng Ký và đăng nhập
 
 //Lien He
