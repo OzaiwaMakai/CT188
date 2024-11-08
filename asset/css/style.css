@@ -201,8 +201,6 @@
 }
 
 @media (max-width: 767.98px) {
-
-
     .section-one .inner-wrap .inner-content .inner-title {
         font-size: 50px;
     }
@@ -1097,8 +1095,8 @@
 
 .home-filter__page-control {
     display: flex;
-    
     overflow: hidden;
+    border-radius: 3px;
 }
 
 .home-filter__page-control .home-filter__page-btn {
@@ -1161,6 +1159,8 @@
 .good_container .inner-item-product {
     background: linear-gradient(to bottom, #fff 0%, #f7f7f7 100%);
     margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .good_container .inner-item-product:hover {
@@ -1238,10 +1238,10 @@
 
 .good_container .inner-item-product .inner-title {
     text-decoration: none;
+    text-align: center;
     font-size: 15px;
     font-weight: 400;
     color: var(--text-color);
-    text-align: center;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -1270,7 +1270,6 @@
     align-items: center;
     justify-content: center;
 }
-
 
 .good_container .inner-item-product .inner-price .old-price {
     font-size: 15px;
@@ -1317,6 +1316,17 @@
   opacity: 0;
 }
 
+@media (max-width: 991.98px) {
+    .good_container .inner-item-product .item-image img {
+        width: 100%;
+    }
+    .good_container .inner-item-product .inner-title {
+        -webkit-line-clamp: 1;
+    }
+    .good_container .inner-item-product:hover .product-button {
+        display: none;
+    }
+}
 
 /* san pham */
 
@@ -1332,9 +1342,11 @@
     margin: 0 8px;
 }
 
-.pagination .pagination-item.pagination-item-active .pagination-link {
+.pagination .pagination-active .pagination-link {
     background-color: var(--primary-color-2);
     color: var(--primary-color-1);
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 
@@ -1346,6 +1358,15 @@
     justify-content: center;
     align-items: center;
     padding: 8px 16px;
+}
+
+@media (max-width: 575.98px) {
+    /* nth-child lấy vị trí chính xác trong danh sách ace */
+    .pagination .pagination-item:nth-child(4),
+    .pagination .pagination-item:nth-child(5),
+    .pagination .pagination-item:nth-child(6) {
+        display: none;
+    }
 }
 
 
@@ -1362,24 +1383,11 @@
     background-color: #f5f5f5;
 }
 
-.product__info .inner-wrap {
+.info-wrap {
     background-color: #fff;
     padding: 28px;
-    border-radius: 6px;
+    border-radius: 8px;
 }
-
-/* .product__info .product__image {
-    width: 100%;
-    height: 100%;
-    box-shadow: 0 0 5px #9b9b9b;
-}
-
-.product__info .product__image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-} */
 
 /* SWIPPER SLIDE-INFO PRODUCTS*/
 .product__image {
@@ -1450,6 +1458,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 
@@ -1458,6 +1467,29 @@
     color: var(--primary-color-2);
 }
 
+@media (max-width: 991.98px) {
+    .product__image {
+        width: 525px;
+        height: 525px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .product__image {
+        width: 420px;
+        height: 520px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 575.98px) {
+   .product__image {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+}
 
 /*SWIPPER SLIDE-INFO PRODUCTS*/
 
@@ -1703,10 +1735,8 @@
     background-color: #f5f5f5;
 }
 
-.product__desc .inner-wrap {
-    background-color: #fff;
-    padding: 28px;
-    border-radius: 6px;
+.product__desc .container_desc {
+    color: var(--text-color);
     font-size: 16px;
     line-height: 1.6;
 }
@@ -1715,10 +1745,6 @@
     font-size: 26px;
     color: var(--primary-color-2);
     margin-bottom: 12px;
-}
-
-.product__desc .inner__info, .product__desc .inner_desc {
-    color: var(--text-color);
 }
 
 .product__desc .inner__info .desc-1 {
@@ -1747,14 +1773,8 @@
 
 /* RATING */
 .product__ratings {
-    padding: 0 0 80px;
+    padding: 0 0 16px;
     background-color: #f5f5f5;
-}
-
-.product__ratings .inner-wrap {
-    background-color: #fff;
-    padding: 28px;
-    border-radius: 6px;
 }
 
 .product__ratings .rating__title {
@@ -1772,17 +1792,17 @@
     border-radius: 3px;
 }
 
-.product__ratings .rating__overview .star__icon {
+.product__ratings .star__icon {
     display: flex;
     align-items: center;
 }
 
-.product__ratings .rating__overview .star__icon span {
+.product__ratings .star__icon span {
     color: var(--text-color);
     font-size: 32px;
     margin-right: 10px;
 }
- .product__ratings .rating__overview .star__icon i {
+ .product__ratings .star__icon i {
     letter-spacing: 2px;
     color: #ffc107;
  }
@@ -1798,7 +1818,7 @@
     margin-left: 20px;
 }
 
-.product__ratings .rating__overview .overview__menu .overview__menu--filer {
+.product__ratings .overview__menu .overview__menu--filer {
     display: inline-block;
     font-size: 16px;
     font-weight: 400;
@@ -1839,16 +1859,11 @@
 }
 
 /* Customer comment */
-
-.product__ratings .customer__rating {
-}
-
 .product__ratings .customer__rating .customer_cmt {
     display: flex;
     padding: 20px 0;
     border-bottom: 1px solid #efefef;
 }
-
 
 .product__ratings .customer_cmt .customer__avt{
     width: 40px;
@@ -1910,7 +1925,7 @@
 /* SẢN PHẨM TƯƠNG TỰ */
 .model__slide {
     background-color: #f5f5f5;
-    padding: 50px 0;
+    padding-bottom: 30px;
 }
 
 .model__slide .model__slide-title{
@@ -1921,6 +1936,7 @@
 
 .slide {
     position: relative;
+    background-color: #fff;
 }
 
 .card_slide {
@@ -1932,31 +1948,14 @@
     display: flex;
 }
 
-
 .slide .card__wrapper .card {
-    margin: 0 11px;
-    width: calc(100% / 4);
     border-radius: 10px;
     overflow: hidden;
 }
 
-.slide .card.card_mr {
-    margin-right: 0;
-}
-
-.slide .card.card_ml {
-    margin-left: 0;
-}
-
-
 .card .card-image { 
     height: 300px;
-    /* width: 260px; */
-    /* height: 100%; */
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-items: center;
 }
 
 .card .card-image img {
@@ -1990,7 +1989,6 @@
     margin: 10px 0;
 }
 
-
 .carousel-control-prev, .carousel-control-next {
     background-color: #a5a5a5;
     width: 40px;
@@ -2002,9 +2000,9 @@
 }
 
 
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
     .card .card-image {
-        height: 200px;
+        height: 250px;
     }
     .card .card-body .card-title, 
     .card .card-body .card_price {
@@ -2012,13 +2010,17 @@
     }
 }
 
+@media (max-width: 991.98px) {
+    .card .card-image {
+        height: 200px;
+    }
+}
 
 @media (max-width: 767.98px) {
     .model__slide {
         display: none;
     }
 }
-
 
 /* SẢN PHẨM TƯƠNG TỰ */
 /* PRODUCT INFORMATION */

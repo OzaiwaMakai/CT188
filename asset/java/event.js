@@ -316,3 +316,40 @@ function showCart() {
           alert("Đã đặt hàng thành công!");
       }
   }
+
+
+
+  // Tăng giảm số lượng sản phẩm trong trang info_sanpham
+  let amountElement = document.querySelector('#amount')
+  let amount = amountElement.value
+  console.log(amountElement)
+  let updateValue = (amount) => {
+    amountElement.value = amount
+  }
+
+  function inputAmount() {
+    amount = amountElement.value
+    amount = parseInt(amount)
+    amount = isNaN(amount) || amount == 0 ? 1 : amount
+    updateValue(amount)
+  }
+  // Handle plus
+  let handelPlus = () => {
+    if (amount < 10) amount++
+    updateValue(amount)
+  }
+  // Handle minus
+  let handelMinus = () => {
+    if (amount > 1) amount--
+    updateValue(amount)
+  }
+  // Tăng giảm số lượng sản phẩm trong trang info_sanpham
+
+    // HOME-FILTER - lựa chọn lọc giá sản phẩm
+  function openOption() {
+    const list_optiion = document.querySelector(".select-input__list");
+    if (list_optiion.style.display == 'block')
+      list_optiion.style.display = 'none'
+    else list_optiion.style.display = 'block'
+  }
+  // HOME-FILTER
