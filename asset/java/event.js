@@ -84,33 +84,41 @@ function anhienmatkhau1(){
 // Đăng Ký và đăng nhập
 
 //Lien He
-function nutGui() {
-    var tenlh = document.getElementById("lienheten").value.trim();
-    var emaillh = document.getElementById("lienheemail").value.trim();
-    var chudelh = document.getElementById("lienhechude").value.trim();
-    var cmt = document.getElementById("lienhecmt").value.trim();
-
-    if (tenlh !== "" && emaillh !== "" && chudelh !== "" && cmt !== "") {
-        alert("Nội dung đã được gửi!");
-        document.getElementById("lienheten").value = "";
-        document.getElementById("lienheemail").value = "";
-        document.getElementById("lienhechude").value = "";
-        document.getElementById("lienhecmt").value = "";
-    }
-    else {
-        alert("Vui lòng nhập đầy đủ các thông tin yêu cầu!");
-        document.getElementById("lienheten").value = "";
-        document.getElementById("lienheemail").value = "";
-        document.getElementById("lienhechude").value = "";
-        document.getElementById("lienhecmt").value = "";
-    }
-
-    document.getElementById("lienheten").value = "";
-    document.getElementById("lienheemail").value = "";
-    document.getElementById("lienhechude").value = "";
-    document.getElementById("lienhecmt").value = "";
+// Hàm kiểm tra định dạng email
+function dinhDangEmail(email) {
+  var emailkt = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$/;
+  return emailkt.test(email);
 }
 
+// Hàm gửi
+function nutGui() {
+  var tenlh = document.getElementById("lienheten").value.trim();
+  var emaillh = document.getElementById("lienheemail").value.trim();
+  var chudehl = document.getElementById("lienhechude").value.trim();
+  var cmt = document.getElementById("lienhecmt").value.trim();
+
+  // Kiểm tra các trường nhập liệu và định dạng email
+  if (tenlh !== "" && emaillh !== "" && chudehl !== "" && cmt !== "" && dinhDangEmail(emaillh)) {
+      alert("Nội dung đã được gửi!");
+      document.getElementById("lienheten").value = "";
+      document.getElementById("lienheemail").value = "";
+      document.getElementById("lienhechude").value = "";
+      document.getElementById("lienhecmt").value = "";
+  } else {
+      if (tenlh === "" && emaillh === "" && chudehl === "" && cmt === "") {
+        alert("Vui lòng nhập đầy đủ các thông tin yêu cầu!");
+      }
+      else if (!dinhDangEmail(emaillh)) {
+          alert("Vui lòng nhập địa chỉ email hợp lệ!");
+      } else {
+          alert("Vui lòng nhập đầy đủ các thông tin yêu cầu!");
+      }
+      // document.getElementById("lienheten").value = "";
+      // document.getElementById("lienheemail").value = "";
+      // document.getElementById("lienhechude").value = "";
+      // document.getElementById("lienhecmt").value = "";
+  }
+}
 //Ket Thuc Lien He
 
 
