@@ -18,7 +18,6 @@ html {
 body {
     color: var(--primary-color-2);
     font-family: "Inter", sans-serif;
-    
 }
 
 @media (max-width: 1199.98px) {

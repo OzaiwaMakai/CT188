@@ -53,6 +53,7 @@ function dangky() {
   return false;
 }
 
+
 function anhienmatkhau(){
     const trangthai = document.getElementById("taomatkhau");
     const thaydoitrangthai = document.querySelector("#thaydoitrangthai i");
@@ -73,7 +74,7 @@ function anhienmatkhau1(){
         trangthai.type = "text";
         thaydoitrangthai.classList.remove("fa-eye");
         thaydoitrangthai.classList.add("fa-eye-slash")
-    }else{
+    }else{a-z
         trangthai.type = "password";
         thaydoitrangthai.classList.remove("fa-eye-slash")
         thaydoitrangthai.classList.add("fa-eye");
@@ -118,23 +119,16 @@ function nutGui() {
       // document.getElementById("lienhecmt").value = "";
   }
 }
-//Ket Thuc Lien He
-
-function nutEnter(event){
-  var keyCode = Event.keyCode;
-  if(keyCode == 32){
-      doSearch();
+function nutEnter(event) {
+  var key=event.keyCode;
+  if(key === 13) {
+    nutGui();
+    return false;
   }
+  return true;
 }
 
-function doSearch(){
-    var frm=document.getElementById("frm-search");
-    if(frm.words.value.length>0)
-    {
-        frm.submit();
-    }
-}
-
+//Ket Thuc Lien He
 
 // SanPham_Vang
 
@@ -221,53 +215,17 @@ var itemList = {
     }
 }
 
-// Tăng giảm số lượng sản phẩm trong trang info_sanpham
-  let amountElement = document.querySelector('#amount')
-  var amount = amountElement.value
-  console.log(amountElement)
-  let updateValue = (amount) => {
-    amountElement.value = amount
-  }
-
-  function inputAmount() {
-    amount = amountElement.value
-    amount = parseInt(amount)
-    amount = isNaN(amount) || amount == 0 ? 1 : amount
-    updateValue(amount)
-  }
-  // Handle plus
-  let handelPlus = () => {
-    if (amount < 10) amount++
-    updateValue(amount)
-  }
-  // Handle minus
-  let handelMinus = () => {
-    if (amount > 1) amount--
-    updateValue(amount)
-  }
-  // Tăng giảm số lượng sản phẩm trong trang info_sanpham
-
-
 function addCart(code){
   // Khai báo biến name lấy giá trị là name dưới dạng chuỗi của mã sản phẩm tương ứng với biến code 
-    var name=itemList[code].name;
-    amount = parseInt(amount)
-    amount = isNaN(amount) || amount == 0 ? 1 : amount
+      var name=itemList[code].name;
   // Kiểm tra sự tồn tại của mã sản phẩm trong localStorage, nếu không tồn tại thì thêm mới và thiết lập giá trị cho mã sản phẩm
-
-  if (typeof localStorage[code] == 'undefined')
-    window.localStorage.setItem(code, amount)
-  else {
-    var current = parseInt(window.localStorage.getItem(code))
-    window.localStorage.setItem(code, current + amount)
-  }
-  alert("Đã thêm sản phẩm " + name + " vào giỏ hàng thành công!");
+      if(typeof localStorage[code] == "undefined") window.localStorage.setItem(code, 1);
+      else{
+          var current = parseInt((window.localStorage).getItem(code));
+          window.localStorage.setItem(code, current + 1);
+      }
+      alert("Đã thêm sản phẩm " + name + " vào giỏ hàng thành công!");
 };
-
-function buyNow(code) {
-  addCart(code);
-  window.location.href = 'cart.html';
-}
 
 function showCart() {
   // Khai báo biến formatter để hiển thị giá tiền sản phẩm dưới dạng tiền tệ VND
@@ -394,7 +352,32 @@ function showCart() {
 
 
 
-  
+  // Tăng giảm số lượng sản phẩm trong trang info_sanpham
+  let amountElement = document.querySelector('#amount')
+  let amount = amountElement.value
+  console.log(amountElement)
+  let updateValue = (amount) => {
+    amountElement.value = amount
+  }
+
+  function inputAmount() {
+    amount = amountElement.value
+    amount = parseInt(amount)
+    amount = isNaN(amount) || amount == 0 ? 1 : amount
+    updateValue(amount)
+  }
+  // Handle plus
+  let handelPlus = () => {
+    if (amount < 10) amount++
+    updateValue(amount)
+  }
+  // Handle minus
+  let handelMinus = () => {
+    if (amount > 1) amount--
+    updateValue(amount)
+  }
+  // Tăng giảm số lượng sản phẩm trong trang info_sanpham
+
     // HOME-FILTER - lựa chọn lọc giá sản phẩm
   function openOption() {
     const list_optiion = document.querySelector(".select-input__list");
