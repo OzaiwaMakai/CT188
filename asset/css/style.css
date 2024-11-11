@@ -126,6 +126,10 @@
     transition: linear 0.5s;
 }
 
+.navbar-collapse {
+    display: none;
+}
+
 @media (max-width: 1199.98px) {
     /* Code… */
     .header .inner-wrap .inner-list-nav a {
@@ -145,6 +149,23 @@
 
     .header .inner-wrap .inner-header-bar {
         display: block;
+    }
+
+    .navbar-collapse {
+        display: block;
+        text-align: center;
+    }
+
+    .navbar-collapse .nav-link {
+        color: var(--primary-color-2);
+        font: bold;
+        padding: 16px;
+    }
+    
+    .navbar-collapse .nav-link:hover {
+        background-color: var(--primary-color-2);
+        color: var(--primary-color-1);
+        transition: linear 0.5s;
     }
 
     .header .inner-wrap .inner-header-bar a{

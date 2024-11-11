@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="asset/css/style.css">
         <link rel="icon" href="asset/image/Juliana (1)-Photoroom.png">
         <title>Calvados Jewelry</title>
+
     </head>
     <body>
 
@@ -23,7 +24,7 @@
             <div class="container-fluid">
                 <div class="inner-wrap row">
                     <div class="inner-header-bar col-lg-3 col-md-3 col-3">
-                        <a href="#"><i class="fa-solid fa-bars"></i></a>
+                        <a href="#" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></a>
                     </div>
                     <div class="inner-logo col-xl-3 col-lg-3 col-md-3 col-3">
                         <a href="index.html">
@@ -41,6 +42,21 @@
                         <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                         <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
                     </ul>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                          <li class="nav-item active">
+                            <a class="nav-link" href="index.html">TRANG CHỦ <span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="gioithieu.html">GIỚI THIỆU</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="sanpham_vang.html">SẢN PHẨM</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="lienhe.html">LIÊN HỆ</a>
+                          </li>
+                      </div>
                 </div>
             </div>
         </header>
@@ -113,7 +129,7 @@
                                 <button class="minus-btn" onclick="handelMinus()">
                                     <i class="fa-solid fa-minus"></i>
                                 </button>
-                                <input type="text" name="amount" id="amount" value="1">
+                                <input type="text" name="amount" id="amount" value="1" id="sp001">
                                 <button class="plus-btn" onclick="handelPlus()">
                                     <i class="fa-solid fa-plus"></i>
                                 </button>
@@ -136,7 +152,7 @@
 
                             <div class="row">
                                 <div class="product__btn">
-                                    <button class="col-lg-5 col-md-6 col-12 product--add-cart">
+                                    <button onclick="addCart('sp001')" class="col-lg-5 col-md-6 col-12 product--add-cart">
                                         <i class="fa-solid fa-cart-plus"></i>
                                         Thêm vào giỏ hàng
                                     </button>
@@ -382,16 +398,14 @@
                     <div class="inner-item col-xl-3 col-lg-3 col-md-6 col-12">
                         <div class="inner-title">Danh mục</div>
                         <ul class="inner-nav">
-                            <li><a href="#">Hoa tai</a></li>
-                            <li><a href="#">Lắc tay</a></li>
-                            <li><a href="#">Nhẫn</a></li>
-                            <li><a href="#">Dây chuyền</a></li>
+                            <li><a href="sanpham_vang.html">Sản phẩm phổ biến</a></li>
+                            <li><a href="sanpham_new.html">Sản phẩm mới</a></li>
                         </ul>
                     </div>
                     <div class="inner-item col-xl-3 col-lg-3 col-md-6 col-12">
                         <div class="inner-title">Liên kết</div>
                         <ul class="inner-nav">
-                            <li><a href="#">Về chúng tôi</a></li>
+                            <li><a href="gioithieu.html">Về chúng tôi</a></li>
                             <li><a href="#">Chính sách đổi trả</a></li>
                             <li><a href="#">Chính sách bảo hành</a></li>
                             <li><a href="#">Chính sách vận chuyển</a></li>
@@ -400,17 +414,17 @@
                     <div class="inner-item col-xl-3 col-lg-3 col-md-6 col-12">
                         <div class="inner-title">Liên hệ</div>
                         <ul class="inner-nav">
-                            <li><a href="#">Gọi ngay (+84) 123456789</a></li>
-                            <li><a href="#">Địa chỉ: Đại Học Cần Thơ, Ninh Kiều, TP. Cần Thơ</a></li>
-                            <li><a href="#">E-mail: Kyb2203508@gmail.com</a></li>
+                            <li><a href="lienhe.html">Gọi ngay (+84) 123456789</a></li>
+                            <li><a href="lienhe.html">Địa chỉ: Đại Học Cần Thơ, Ninh Kiều, TP. Cần Thơ</a></li>
+                            <li><a href="lienhe.html">E-mail: Kyb2203508@gmail.com</a></li>
                         </ul>
                     </div>
                     <div class="inner-item col-xl-3 col-lg-3 col-md-6 col-12">
                         <div class="inner-title">Theo dõi chúng tôi trên</div>
                         <ul class="inner-nav">
-                            <li><a href="#" class=" inner-socials"><i class="fa-brands fa-square-facebook inner-icon"></i>Facebook</a></li>
-                            <li><a href="#" class=" inner-socials"><i class="fa-brands fa-square-instagram inner-icon"></i>Instagram</a></li>
-                            <li><a href="#" class=" inner-socials"><i class="fa-brands fa-linkedin inner-icon"></i>LinkedIn</a></li>
+                            <li><a href="facebook.com" class=" inner-socials"><i class="fa-brands fa-square-facebook inner-icon"></i>Facebook</a></li>
+                            <li><a href="https://www.instagram.com/" class=" inner-socials"><i class="fa-brands fa-square-instagram inner-icon"></i>Instagram</a></li>
+                            <li><a href="https://www.instagram.com/" class=" inner-socials"><i class="fa-brands fa-linkedin inner-icon"></i>LinkedIn</a></li>
                         </ul>
                     </div>
     
@@ -451,7 +465,7 @@
 
         <!-- Swiper JS -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+        <script src="asset/java/event.js"></script>
         <!-- Initialize Swiper -->
         <script>
             var swiper = new Swiper(".mySwiper", {
