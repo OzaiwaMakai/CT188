@@ -30,7 +30,7 @@
                     <ul class="inner-list-nav row col-xl-6 col-lg-6 col-md-3 col-3">
                         <li><a href="index.html">Trang chủ</a></li>
                         <li><a href="gioithieu.html">Giới thiệu</a></li>
-                        <li><a href="sanpham_vang.html">Sản phẩm</a></li>
+                        <li><a href="sanpham.html">Sản phẩm</a></li>
                         <li><a href="lienhe.html">Liên hệ</a></li>
                     </ul>
                     <ul class="inner-list-user row col-xl-3 col-lg-3 col-md-3 col-3">
@@ -66,7 +66,7 @@
                         <div class="title-section">
                             <div class="inner-content">
                                 <div class="entry-header">
-                                    <h1>Trang Sức Bạc</h1>
+                                    <h1>Sản Phẩm</h1>
                                 </div>
             
                                 <div class="entry-breadcrumbs">
@@ -74,7 +74,7 @@
                                     <span class="breadcrumbs-icon">
                                         <i class="fa-solid fa-angles-right"></i>
                                     </span>
-                                    <span class="breadcrumbs-current">Trang sức bạc</span>
+                                    <span class="breadcrumbs-current">Sản phẩm</span>
                                 </div>
                             </div>
                         </div>
@@ -94,7 +94,7 @@
                             <a href="" class="home-filter__btn btn-filter">Bán chạy</a>
 
                             <div class="select-input">
-                                <button id="select__button">
+                                <button id="select__button"  onclick="openOption()">
                                     <span class="select-input__label">Theo giá</span>
                                     <i class="select-input__icon fa-solid fa-angle-down"></i>
                                 </button>
@@ -108,15 +108,6 @@
                                         <a href="" class="select-input__link">Cao đến thấp</a>
                                     </li>
                                 </ul>
-                                <!-- <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle " type="button" data-toggle="dropdown" aria-expanded="false">
-                                        Theo giá
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Thấp đến cao</a>
-                                        <a class="dropdown-item" href="#">Cao đến thấp</a>
-                                    </div>
-                                </div> -->
                             </div>
                             <div class="home-filter__page">
                                 <span class="home-filter__page-num">
@@ -140,7 +131,7 @@
 
                 <!-- PRODUCT -->
                 <div class="row">
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-6">
                         <div class="inner-item-product">
                             <div class="item-image">
                                 <a href="info_sanpham.html">
@@ -149,13 +140,13 @@
 
                                 <div class="product-button">
                                     <div class="button-item">
-                                        <a onclick="addCart('sp001')" href=""><i class="fa-solid fa-cart-plus"></i></a>
+                                        <span onclick="addCart('sp001')"><i class="fa-solid fa-cart-plus"></i></span>
                                     </div>
                                     <div class="button-item">
-                                        <a href="" class="separate"><i class="fa-regular fa-heart"></i></a>
+                                        <span class="separate"><i class="fa-regular fa-heart"></i></span>
                                     </div>
                                     <div class="button-item">
-                                        <a href=""> <i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <span> <i class="fa-solid fa-magnifying-glass"></i></span>
                                     </div>
 
                                 </div>
@@ -181,7 +172,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-6">
                         <div class="inner-item-product">
                             <div class="item-image">
                                 <a href="">
@@ -190,13 +181,13 @@
 
                                 <div class="product-button">
                                     <div class="button-item">
-                                        <a onclick="addCart('sp002')" href=""><i class="fa-solid fa-cart-plus"></i></a>
+                                        <span onclick="addCart('sp002')"><i class="fa-solid fa-cart-plus"></i></span>
                                     </div>
                                     <div class="button-item">
-                                        <a href="" class="separate"><i class="fa-regular fa-heart"></i></a>
+                                        <span class="separate"><i class="fa-regular fa-heart"></i></span>
                                     </div>
                                     <div class="button-item">
-                                        <a href=""> <i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <span> <i class="fa-solid fa-magnifying-glass"></i></span>
                                     </div>
 
                                 </div>
@@ -222,7 +213,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-6">
                         <div class="inner-item-product">
                             <div class="item-image">
                                 <a href="">
@@ -231,13 +222,13 @@
 
                                 <div class="product-button">
                                     <div class="button-item">
-                                        <a onclick="addCart('sp003')" href=""><i class="fa-solid fa-cart-plus"></i></a>
+                                        <span onclick="addCart('sp003')"><i class="fa-solid fa-cart-plus"></i></span>
                                     </div>
                                     <div class="button-item">
-                                        <a href="" class="separate"><i class="fa-regular fa-heart"></i></a>
+                                        <span class="separate"><i class="fa-regular fa-heart"></i></span>
                                     </div>
                                     <div class="button-item">
-                                        <a href=""> <i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <span> <i class="fa-solid fa-magnifying-glass"></i></span>
                                     </div>
 
                                 </div>
@@ -263,7 +254,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-6">
                         <div class="inner-item-product">
                             <div class="item-image">
                                 <a href="">
@@ -272,13 +263,13 @@
 
                                 <div class="product-button">
                                     <div class="button-item">
-                                        <a onclick="addCart('sp004')" href=""><i class="fa-solid fa-cart-plus"></i></a>
+                                        <span onclick="addCart('sp004')"><i class="fa-solid fa-cart-plus"></i></span>
                                     </div>
                                     <div class="button-item">
-                                        <a href="" class="separate"><i class="fa-regular fa-heart"></i></a>
+                                        <span class="separate"><i class="fa-regular fa-heart"></i></span>
                                     </div>
                                     <div class="button-item">
-                                        <a href=""> <i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <span> <i class="fa-solid fa-magnifying-glass"></i></span>
                                     </div>
 
                                 </div>
@@ -306,7 +297,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-6">
                         <div class="inner-item-product">
                             <div class="item-image">
                                 <a href="">
@@ -315,13 +306,13 @@
 
                                 <div class="product-button">
                                     <div class="button-item">
-                                        <a onclick="addCart('sp005')" href=""><i class="fa-solid fa-cart-plus"></i></a>
+                                        <span onclick="addCart('sp005')"><i class="fa-solid fa-cart-plus"></i></span>
                                     </div>
                                     <div class="button-item">
-                                        <a href="" class="separate"><i class="fa-regular fa-heart"></i></a>
+                                        <span class="separate"><i class="fa-regular fa-heart"></i></span>
                                     </div>
                                     <div class="button-item">
-                                        <a href=""> <i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <span> <i class="fa-solid fa-magnifying-glass"></i></span>
                                     </div>
 
                                 </div>
@@ -329,7 +320,7 @@
                             <div class="inner-content">
                                 <a href="#" class="inner-title">Lắc tay bạc Ta S999 nữ cỏ 4 lá cách điệu đẹp</a>
                                 <div class="inner-price">
-                                    <div class="new-price current">920.000đ</div>
+                                    <div class="new-price current-price">920.000đ</div>
                                     <div class="old-price">
                                         <span class="price"></span> 
                                         <span class="product-discount"></span>
@@ -347,7 +338,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-6">
                         <div class="inner-item-product">
                             <div class="item-image">
                                 <a href="">
@@ -356,13 +347,13 @@
 
                                 <div class="product-button">
                                     <div class="button-item">
-                                        <a onclick="addCart('sp006')" href=""><i class="fa-solid fa-cart-plus"></i></a>
+                                        <span onclick="addCart('sp006')"><i class="fa-solid fa-cart-plus"></i></span>
                                     </div>
                                     <div class="button-item">
-                                        <a href="" class="separate"><i class="fa-regular fa-heart"></i></a>
+                                        <span class="separate"><i class="fa-regular fa-heart"></i></span>
                                     </div>
                                     <div class="button-item">
-                                        <a href=""> <i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <span> <i class="fa-solid fa-magnifying-glass"></i></span>
                                     </div>
 
                                 </div>
@@ -388,7 +379,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-6">
                         <div class="inner-item-product">
                             <div class="item-image">
                                 <a href="">
@@ -397,13 +388,13 @@
 
                                 <div class="product-button">
                                     <div class="button-item">
-                                        <a onclick="addCart('sp007')" href=""><i class="fa-solid fa-cart-plus"></i></a>
+                                        <span onclick="addCart('sp007')"><i class="fa-solid fa-cart-plus"></i></span>
                                     </div>
                                     <div class="button-item">
-                                        <a href="" class="separate"><i class="fa-regular fa-heart"></i></a>
+                                        <span class="separate"><i class="fa-regular fa-heart"></i></span>
                                     </div>
                                     <div class="button-item">
-                                        <a href=""> <i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <span> <i class="fa-solid fa-magnifying-glass"></i></span>
                                     </div>
 
                                 </div>
@@ -429,7 +420,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-6">
                         <div class="inner-item-product">
                             <div class="item-image">
                                 <a href="">
@@ -438,13 +429,13 @@
 
                                 <div class="product-button">
                                     <div class="button-item">
-                                        <a onclick="addCart('sp008')" href=""><i class="fa-solid fa-cart-plus"></i></a>
+                                        <span onclick="addCart('sp008')"><i class="fa-solid fa-cart-plus"></i></span>
                                     </div>
                                     <div class="button-item">
-                                        <a href="" class="separate"><i class="fa-regular fa-heart"></i></a>
+                                        <span class="separate"><i class="fa-regular fa-heart"></i></span>
                                     </div>
                                     <div class="button-item">
-                                        <a href=""> <i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <span> <i class="fa-solid fa-magnifying-glass"></i></span>
                                     </div>
 
                                 </div>
@@ -472,7 +463,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-6">
                         <div class="inner-item-product">
                             <div class="item-image">
                                 <a href="">
@@ -481,13 +472,13 @@
 
                                 <div class="product-button">
                                     <div class="button-item">
-                                        <a onclick="addCart('sp009')" href=""><i class="fa-solid fa-cart-plus"></i></a>
+                                        <span onclick="addCart('sp009')"><i class="fa-solid fa-cart-plus"></i></span>
                                     </div>
                                     <div class="button-item">
-                                        <a href="" class="separate"><i class="fa-regular fa-heart"></i></a>
+                                        <span class="separate"><i class="fa-regular fa-heart"></i></span>
                                     </div>
                                     <div class="button-item">
-                                        <a href=""> <i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <span> <i class="fa-solid fa-magnifying-glass"></i></span>
                                     </div>
 
                                 </div>
@@ -513,7 +504,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-6">
                         <div class="inner-item-product">
                             <div class="item-image">
                                 <a href="">
@@ -522,13 +513,13 @@
 
                                 <div class="product-button">
                                     <div class="button-item">
-                                        <a onclick="addCart('sp010')" href=""><i class="fa-solid fa-cart-plus"></i></a>
+                                        <span onclick="addCart('sp010')"><i class="fa-solid fa-cart-plus"></i></span>
                                     </div>
                                     <div class="button-item">
-                                        <a href="" class="separate"><i class="fa-regular fa-heart"></i></a>
+                                        <span class="separate"><i class="fa-regular fa-heart"></i></span>
                                     </div>
                                     <div class="button-item">
-                                        <a href=""> <i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <span> <i class="fa-solid fa-magnifying-glass"></i></span>
                                     </div>
 
                                 </div>
@@ -554,7 +545,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-6">
                         <div class="inner-item-product">
                             <div class="item-image">
                                 <a href="">
@@ -563,13 +554,13 @@
 
                                 <div class="product-button">
                                     <div class="button-item">
-                                        <a onclick="addCart('sp011')" href=""><i class="fa-solid fa-cart-plus"></i></a>
+                                        <span onclick="addCart('sp011')"><i class="fa-solid fa-cart-plus"></i></span>
                                     </div>
                                     <div class="button-item">
-                                        <a href="" class="separate"><i class="fa-regular fa-heart"></i></a>
+                                        <span class="separate"><i class="fa-regular fa-heart"></i></span>
                                     </div>
                                     <div class="button-item">
-                                        <a href=""> <i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <span> <i class="fa-solid fa-magnifying-glass"></i></span>
                                     </div>
 
                                 </div>
@@ -595,7 +586,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-6">
                         <div class="inner-item-product">
                             <div class="item-image">
                                 <a href="">
@@ -604,13 +595,13 @@
 
                                 <div class="product-button">
                                     <div class="button-item">
-                                        <a onclick="addCart('sp012')" href=""><i class="fa-solid fa-cart-plus"></i></a>
+                                        <span onclick="addCart('sp012')"><i class="fa-solid fa-cart-plus"></i></span>
                                     </div>
                                     <div class="button-item">
-                                        <a href="" class="separate"><i class="fa-regular fa-heart"></i></a>
+                                        <span class="separate"><i class="fa-regular fa-heart"></i></span>
                                     </div>
                                     <div class="button-item">
-                                        <a href=""> <i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <span> <i class="fa-solid fa-magnifying-glass"></i></span>
                                     </div>
 
                                 </div>
@@ -638,7 +629,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-6">
                         <div class="inner-item-product">
                             <div class="item-image">
                                 <a href="">
@@ -647,13 +638,13 @@
 
                                 <div class="product-button">
                                     <div class="button-item">
-                                        <a onclick="addCart('sp013')" href=""><i class="fa-solid fa-cart-plus"></i></a>
+                                        <span onclick="addCart('sp013')"><i class="fa-solid fa-cart-plus"></i></span>
                                     </div>
                                     <div class="button-item">
-                                        <a href="" class="separate"><i class="fa-regular fa-heart"></i></a>
+                                        <span class="separate"><i class="fa-regular fa-heart"></i></span>
                                     </div>
                                     <div class="button-item">
-                                        <a href=""> <i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <span> <i class="fa-solid fa-magnifying-glass"></i></span>
                                     </div>
 
                                 </div>
@@ -679,7 +670,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-6">
                         <div class="inner-item-product">
                             <div class="item-image">
                                 <a href="">
@@ -688,13 +679,13 @@
 
                                 <div class="product-button">
                                     <div class="button-item">
-                                        <a onclick="addCart('sp014')" href=""><i class="fa-solid fa-cart-plus"></i></a>
+                                        <span onclick="addCart('sp014')"><i class="fa-solid fa-cart-plus"></i></span>
                                     </div>
                                     <div class="button-item">
-                                        <a href="" class="separate"><i class="fa-regular fa-heart"></i></a>
+                                        <span class="separate"><i class="fa-regular fa-heart"></i></span>
                                     </div>
                                     <div class="button-item">
-                                        <a href=""> <i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <span> <i class="fa-solid fa-magnifying-glass"></i></span>
                                     </div>
 
                                 </div>
@@ -720,7 +711,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-6">
                         <div class="inner-item-product">
                             <div class="item-image">
                                 <a href="">
@@ -729,13 +720,13 @@
 
                                 <div class="product-button">
                                     <div class="button-item">
-                                        <a onclick="addCart('sp015')" href=""><i class="fa-solid fa-cart-plus"></i></a>
+                                        <span onclick="addCart('sp015')"><i class="fa-solid fa-cart-plus"></i></span>
                                     </div>
                                     <div class="button-item">
-                                        <a href="" class="separate"><i class="fa-regular fa-heart"></i></a>
+                                        <span class="separate"><i class="fa-regular fa-heart"></i></span>
                                     </div>
                                     <div class="button-item">
-                                        <a href=""> <i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <span> <i class="fa-solid fa-magnifying-glass"></i></span>
                                     </div>
 
                                 </div>
@@ -761,7 +752,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-6">
                         <div class="inner-item-product">
                             <div class="item-image">
                                 <a href="">
@@ -770,13 +761,13 @@
 
                                 <div class="product-button">
                                     <div class="button-item">
-                                        <a onclick="addCart('sp016')" href=""><i class="fa-solid fa-cart-plus"></i></a>
+                                        <span onclick="addCart('sp016')"><i class="fa-solid fa-cart-plus"></i></span>
                                     </div>
                                     <div class="button-item">
-                                        <a href="" class="separate"><i class="fa-regular fa-heart"></i></a>
+                                        <span class="separate"><i class="fa-regular fa-heart"></i></span>
                                     </div>
                                     <div class="button-item">
-                                        <a href=""> <i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <span> <i class="fa-solid fa-magnifying-glass"></i></span>
                                     </div>
 
                                 </div>
@@ -807,12 +798,12 @@
 
                 <!-- PAGINATION -->
                  <ul class="pagination">
-                    <li class="pagination-item">
+                    <li class="pagination-btn-left">
                         <a href="" class="pagination-link">
                             <i class="fa-solid fa-angle-left"></i>
                         </a>
                     </li>
-                    <li class="pagination-item pagination-item-active">
+                    <li class="pagination-item pagination-active">
                         <a href="" class="pagination-link">
                             1
                         </a>
@@ -847,7 +838,7 @@
                             10
                         </a>
                     </li>
-                    <li class="pagination-item">
+                    <li class="pagination-btn-right">
                         <a href="" class="pagination-link">
                             <i class="fa-solid fa-angle-right"></i>
                         </a>
@@ -904,17 +895,6 @@
                 <p class="inner-right">© Bản quyền thuộc về <strong>Calvados Jewelry</strong> | Cung cấp bởi <strong>Calvados Jewelry</strong></p>
             </div>
           </footer>
-        <script>
-            const button = document.querySelector("#select__button");
-            const list_optiion = document.querySelector(".select-input__list");
-
-            button.addEventListener('click', () => {
-                if(list_optiion.style.display == "block")
-                    list_optiion.style.display = "none";
-                else list_optiion.style.display = "block";
-            })
-            
-        </script>
         <script src="asset/java/event.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>

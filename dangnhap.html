@@ -26,7 +26,7 @@
                     <ul class="inner-list-nav row col-xl-6 col-lg-6 col-md-3 col-3">
                         <li><a href="index.html">Trang chủ</a></li>
                         <li><a href="gioithieu.html">Giới thiệu</a></li>
-                        <li><a href="sanpham_vang.html">Sản phẩm</a></li>
+                        <li><a href="sanpham.html">Sản phẩm</a></li>
                         <li><a href="lienhe.html">Liên hệ</a></li>
                     </ul>
                     <ul class="inner-list-user row col-xl-3 col-lg-3 col-md-3 col-3">
@@ -52,38 +52,25 @@
                 </div>
             </div>
         </header>
-    <div>
-        <a class="vetrangchu" href="index.html">
-            <i class="fa-solid fa-x"></i>
-        </a>
-    </div>
     <div class="align-center">
         <div class="chung">
             <a href="index.html">
                 <img class="logo1" src="asset/image/Juliana (1)-Photoroom.png" alt="logo">
             </a>
-            <div>
                 <h1 class="sizetieude1">Chào mừng bạn đến với Calvados</h1>
-            </div>
-            <div>
                 <h2 class="sizetieude2">
                     Bạn chưa có tài khoản?
                     <a href="dangky.html">Đăng ký</a>
                 </h2>
-            </div>
-            <div class="formchung">
+            <div>
                 <form action="url" method="POST" enctype="application/x-www-form-urlencoded">
-                    <div class="tieude">
-                        <label for="Email">Email</label>
-                    </div>
+                        <label class="tieude" for="Email">Email</label>
                     <div>    
-                        <input class="form-align" id="Email" type="text" name="Email" placeholder="Nhập email" size="40">
+                        <input class="form-align" id="Email" type="text" name="Email" placeholder="Nhập email">
                     </div>
-                    <div class="tieude">
-                        <label for="Mật khẩu">Mật khẩu</label>
-                    </div>
+                        <label class="tieude" for="taomatkhau">Mật khẩu</label>
                     <div class="inputpd">
-                        <input class="form-align" id="taomatkhau" type="password" name="Mặt khẩu" placeholder="Mật khẩu" size="40">
+                        <input class="form-align" id="taomatkhau" type="password" name="Mặt khẩu" placeholder="Mật khẩu">
                         <span  id="thaydoitrangthai" onclick="anhienmatkhau()">
                             <i class="fas fa-eye"></i>
                         </span>

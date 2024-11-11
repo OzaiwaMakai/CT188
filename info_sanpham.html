@@ -19,7 +19,6 @@
 
     </head>
     <body>
-
         <header class="header">
             <div class="container-fluid">
                 <div class="inner-wrap row">
@@ -34,7 +33,7 @@
                     <ul class="inner-list-nav row col-xl-6 col-lg-6 col-md-3 col-3">
                         <li><a href="index.html">Trang chủ</a></li>
                         <li><a href="gioithieu.html">Giới thiệu</a></li>
-                        <li><a href="sanpham_vang.html">Sản phẩm</a></li>
+                        <li><a href="sanpham.html">Sản phẩm</a></li>
                         <li><a href="lienhe.html">Liên hệ</a></li>
                     </ul>
                     <ul class="inner-list-user row col-xl-3 col-lg-3 col-md-3 col-3">
@@ -63,7 +62,7 @@
         
         <div class="product__info">
             <div class="container">
-                <div class="row inner-wrap">
+                <div class="row info-wrap">
                     <div class="col-xl-5 col-lg-5 col-12 image__size">
                         <div class="product__image">
                             <!-- Swiper -->
@@ -129,7 +128,7 @@
                                 <button class="minus-btn" onclick="handelMinus()">
                                     <i class="fa-solid fa-minus"></i>
                                 </button>
-                                <input type="text" name="amount" id="amount" value="1" id="sp001">
+                                <input type="text" name="amount" id="amount" value="1" oninput="inputAmount()">
                                 <button class="plus-btn" onclick="handelPlus()">
                                     <i class="fa-solid fa-plus"></i>
                                 </button>
@@ -156,7 +155,7 @@
                                         <i class="fa-solid fa-cart-plus"></i>
                                         Thêm vào giỏ hàng
                                     </button>
-                                    <button class="col-lg-5 col-md-6 col-12 product--buy">
+                                    <button onclick="buyNow('sp001')" class="col-lg-5 col-md-6 col-12 product--buy">
                                         <i class="fa-solid fa-cart-shopping"></i>
                                         Mua ngay
                                     </button>
@@ -167,11 +166,12 @@
                 </div>
             </div>
         </div>
-
+        <!-- Thông tin & Mô tả sản phẩm -->
         <div class="product__desc">
             <div class="container">
-                <div class="row inner-wrap">
-                    <div class="col-12">
+                <div class="row info-wrap">
+                    <div class="col-12 container_desc">
+                        <!-- Thông tin sản phẩm -->
                         <div class="inner__info">
                             <h2 class="desc__title">Thông tin sản phẩm</h2>
                             <span class="desc-1">Thương hiệu: Calvados Jewelry</span>
@@ -182,20 +182,24 @@
                             <span class="desc-2">Đá: Cubic Zirconia</span>
                             <span class="desc-1">Màu sắc: Bạc mạ vàng</span>
                         </div>
+                        <!-- Thông tin sản phẩm -->
+                         <!-- Mô tả sản phẩm -->
                         <div class="inner_desc">
                             <h2 class="desc__title">Mô tả sản phẩm</h2>
                             <p class="desc__main">
                                 Nếu một món trang sức bắt mắt và sang trọng là điều bạn đang tìm kiếm thì vòng cổ bạc mạ vàng hai trái tim lồng calvados_998386 hoàn toàn phù hợp với bạn. Em nó sẽ giúp bạn thêm phần xinh đẹp và thu hút đó. Sản phẩm được làm từ bạc 92.5% nguyên chất mạ vàng hoặc vàng hồng, điểm nhấn bởi những viên Cubic Zirconia cao cấp và lấp lánh, được chế tác tỉ mỉ và công phu bởi những nghệ nhân lành nghề. Sẽ không bất ngờ khi sự xinh xắn, đáng yêu của bạn thu hút mọi người xung quanh đâu nhé !!
                             </p>
                         </div>
+                         <!-- Mô tả sản phẩm -->
                     </div>
                 </div>
             </div>
         </div>
-
+        <!-- Thông tin & Mô tả sản phẩm -->
+        <!-- Đánh giá sản phẩm -->
         <div class="product__ratings">
             <div class="container">
-                <div class="row inner-wrap">
+                <div class="row info-wrap">
                     <div class="col-12">
                         <h2 class="rating__title">Đánh giá sản phẩm</h2>
                         <div class="row rating__overview">
@@ -223,7 +227,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row inner-wrap">
+                <div class="row info-wrap">
                         <div class="col-12">
                             <div class="customer__rating">
                                 <div class="customer_cmt">
@@ -231,7 +235,7 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z"/></svg>
                                     </div>
                                     <div class="customer_cmt-main">
-                                        <h3 class="customer_name">Quan Nguyen</h3>
+                                        <h3 class="customer_name">Quan Nguyen Đẹp trai 02</h3>
                                         <div class="customer__star">
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
@@ -250,7 +254,7 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z"/></svg>
                                     </div>
                                     <div class="customer_cmt-main">
-                                        <h3 class="customer_name">Hạo Nam</h3>
+                                        <h3 class="customer_name">A Long</h3>
                                         <div class="customer__star">
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
@@ -288,106 +292,126 @@
                 </div>
             </div>
         </div>
-
+        <!-- Đánh giá sản phẩm -->
+        <!-- Sản phẩm đề xuất -->
         <div class="model__slide">
-            <div class="slide">
-                <div class="container">
-                    <h2 class="model__slide-title">Sản phẩm đề xuất</h2>
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="card__wrapper">
-                                    <div class="card">
-                                        <div class="card-image">
-                                            <img src="asset/image/sanphamlienquan/sanphamlienquan_1/1_Day-chuyen-bac-nu-phong-cach-co-trang-CZ-LILI_831944_1.jpg" alt="">
+            <div class="container">
+                <div class="row info-wrap">
+                    <div class="slide">
+                        <h2 class="model__slide-title">Sản phẩm đề xuất</h2>
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="card__wrapper row">
+                                        <div class="col-3">
+                                            <div class="card">
+                                                <div class="card-image">
+                                                    <img src="asset/image/sanphamlienquan/sanphamlienquan_1/1_Day-chuyen-bac-nu-phong-cach-co-trang-CZ-LILI_831944_1.jpg" alt="">
+                                                </div>
+                                                <div class="card-body">
+                                                    <p style="text-align: center;" class="card-title">Dây chuyền bạc nữ đính đá CZ cá tiên</p>
+                                                    <span class="card_price">817.000đ</span>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="card-body">
-                                            <p style="text-align: center;" class="card-title">Dây chuyền bạc nữ đính đá CZ cá tiên</p>
-                                            <span class="card_price">817.000đ</span>
+                                        <div class="col-3">
+                                            <div class="card">
+                                                <div class="card-image">
+                                                    <img src="asset/image/sanphamlienquan/sanphamlienquan_1/2_day-chuyen-bac-mat-pha-le-swaroski-trai-tim-dai-duong-LILI_295787-1-1-400x400.jpg" alt="">
+                                                </div>
+                                                <div class="card-body">
+                                                    <p style="text-align: center;" class="card-title">Dây chuyền bạc nữ đính pha lê Swarovski trái tim đại dương</p>
+                                                    <span class="card_price">785.000đ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="card">
+                                                <div class="card-image">
+                                                    <img src="asset/image/sanphamlienquan/sanphamlienquan_1/3_Day-chuyen-bac-nu-dinh-da-CZ-hinh-tho-ngam-trang-LILI_899188_3-400x400.jpg" alt="">
+                                                </div>
+                                                <div class="card-body">
+                                                    <p style="text-align: center;" class="card-title">Dây chuyền bạc nữ đính đá CZ hình thỏ ngắm trăng</p>
+                                                    <span class="card_price">669.00đ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="card">
+                                                <div class="card-image">
+                                                    <img src="asset/image/sanphamlienquan/sanphamlienquan_1/4_Day-chuyen-bac-trai-tim-pha-le-Swarovski-LILI_972812-4-400x400.jpg" alt="">
+                                                </div>
+                                                <div class="card-body">
+                                                    <p style="text-align: center;" class="card-title">Vòng cổ bạc nữ đẹp và độc đính pha lê Swarovski hình trái tim</p>
+                                                    <span class="card_price">1.194.00đ</span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="card">
-                                        <div class="card-image">
-                                            <img src="asset/image/sanphamlienquan/sanphamlienquan_1/2_day-chuyen-bac-mat-pha-le-swaroski-trai-tim-dai-duong-LILI_295787-1-1-400x400.jpg" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card__wrapper row">
+                                        <div class="col-3">
+                                            <div class="card">
+                                                <div class="card-image">
+                                                    <img src="asset/image/sanphamlienquan/sanphamlienquan_1/5_Mat-day-chuyen-bac-nu-2-trai-tim-ghep-doi-LILI_763116_1-400x400.jpg" alt="">
+                                                </div>
+                                                <div class="card-body">
+                                                    <p style="text-align: center;" class="card-title">Dây chuyền bạc nữ đính đá CZ 2 trái tim ghép đôi</p>
+                                                    <span class="card_price">786.000đ</span>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="card-body">
-                                            <p style="text-align: center;" class="card-title">Dây chuyền bạc nữ đính pha lê Swarovski trái tim đại dương</p>
-                                            <span class="card_price">785.000đ</span>
+                                        <div class="col-3">
+                                            <div class="card">
+                                                <div class="card-image">
+                                                    <img src="asset/image/sanphamlienquan/sanphamlienquan_1/6_Mat-day-chuyen-bac-nu-dinh-da-CZ-co-4-la-LILI_426865_1-400x400.jpg" alt="">
+                                                </div>
+                                                <div class="card-body">
+                                                    <p style="text-align: center;" class="card-title">Dây chuyền bạc nữ đính đá CZ cỏ 4 lá</p>
+                                                    <span class="card_price">804.000đ</span>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-image">
-                                            <img src="asset/image/sanphamlienquan/sanphamlienquan_1/3_Day-chuyen-bac-nu-dinh-da-CZ-hinh-tho-ngam-trang-LILI_899188_3-400x400.jpg" alt="">
+                                        <div class="col-3">
+                                            <div class="card">
+                                                <div class="card-image">
+                                                    <img src="asset/image/sanphamlienquan/sanphamlienquan_1/7_Mat-day-chuyen-bac-nu-trai-tim-cach-dieu-dinh-da-CZ-LILI_352665_2-400x400.jpg" alt="">
+                                                </div>
+                                                <div class="card-body">
+                                                    <p style="text-align: center;" class="card-title">Dây chuyền bạc nữ đính đá CZ hình trái tim cách điệu đẹp Katalina</p>
+                                                    <span class="card_price">819.000đ</span>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="card-body">
-                                            <p style="text-align: center;" class="card-title">Dây chuyền bạc nữ đính đá CZ hình thỏ ngắm trăng</p>
-                                            <span class="card_price">669.00đ</span>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-image">
-                                            <img src="asset/image/sanphamlienquan/sanphamlienquan_1/4_Day-chuyen-bac-trai-tim-pha-le-Swarovski-LILI_972812-4-400x400.jpg" alt="">
-                                        </div>
-                                        <div class="card-body">
-                                            <p style="text-align: center;" class="card-title">Vòng cổ bạc nữ đẹp và độc đính pha lê Swarovski hình trái tim</p>
-                                            <span class="card_price">1.194.00đ</span>
+                                        <div class="col-3">
+                                            <div class="card">
+                                                <div class="card-image">
+                                                    <img src="asset/image/sanphamlienquan/sanphamlienquan_1/8_Day-chuyen-bac-nu-trai-tim-hoa-la-dinh-pha-le-Aurora-LILI_866671_1-400x400.jpg" alt="">
+                                                </div>
+                                                <div class="card-body">
+                                                    <p style="text-align: center;" class="card-title">Dây chuyền bạc nữ đẹp đính pha lê Aurora trái tim hoa lá</p>
+                                                    <span class="card_price">728.00đ</span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="card__wrapper">
-                                    <div class="card">
-                                        <div class="card-image">
-                                            <img src="asset/image/sanphamlienquan/sanphamlienquan_1/5_Mat-day-chuyen-bac-nu-2-trai-tim-ghep-doi-LILI_763116_1-400x400.jpg" alt="">
-                                        </div>
-                                        <div class="card-body">
-                                            <p style="text-align: center;" class="card-title">Dây chuyền bạc nữ đính đá CZ 2 trái tim ghép đôi</p>
-                                            <span class="card_price">786.000đ</span>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-image">
-                                            <img src="asset/image/sanphamlienquan/sanphamlienquan_1/6_Mat-day-chuyen-bac-nu-dinh-da-CZ-co-4-la-LILI_426865_1-400x400.jpg" alt="">
-                                        </div>
-                                        <div class="card-body">
-                                            <p style="text-align: center;" class="card-title">Dây chuyền bạc nữ đính đá CZ cỏ 4 lá</p>
-                                            <span class="card_price">804.000đ</span>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-image">
-                                            <img src="asset/image/sanphamlienquan/sanphamlienquan_1/7_Mat-day-chuyen-bac-nu-trai-tim-cach-dieu-dinh-da-CZ-LILI_352665_2-400x400.jpg" alt="">
-                                        </div>
-                                        <div class="card-body">
-                                            <p style="text-align: center;" class="card-title">Dây chuyền bạc nữ đính đá CZ hình trái tim cách điệu đẹp Katalina</p>
-                                            <span class="card_price">819.000đ</span>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-image">
-                                            <img src="asset/image/sanphamlienquan/sanphamlienquan_1/8_Day-chuyen-bac-nu-trai-tim-hoa-la-dinh-pha-le-Aurora-LILI_866671_1-400x400.jpg" alt="">
-                                        </div>
-                                        <div class="card-body">
-                                            <p style="text-align: center;" class="card-title">Dây chuyền bạc nữ đẹp đính pha lê Aurora trái tim hoa lá</p>
-                                            <span class="card_price">728.00đ</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Sản phẩm đề xuất -->
 
         <footer class="footer">
             <div class="container">
@@ -433,36 +457,7 @@
             </div>
           </footer>
 
-        <!-- Amount JS -->
-        <script>
-            let amountElement = document.querySelector("#amount");
-            let amount = amountElement.value;
-            
-            
-            let updateValue = (amount) => {
-                amountElement.value = amount;
-            }
-
-            amountElement.addEventListener('input', () => {
-                amount = amountElement.value;
-                amount = parseInt(amount);
-                amount = (isNaN(amount) || amount==0)?1:amount;
-                updateValue(amount);
-            });
-            // Handle plus
-            let handelPlus = () => {
-                if(amount < 10)
-                    amount++;
-                updateValue(amount);
-            }
-            // Handle minus
-            let handelMinus = () => {
-                if(amount > 1)
-                    amount--;
-                updateValue(amount);
-            }
-        </script>
-
+        <script src="asset/java/event.js"></script>
         <!-- Swiper JS -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="asset/java/event.js"></script>
@@ -486,10 +481,6 @@
                 swiper: swiper,
             },
             });
-
-            if(window.innerWidth <= 768) {
-                
-            }
         </script>
 
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
