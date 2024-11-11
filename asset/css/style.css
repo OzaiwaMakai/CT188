@@ -1763,6 +1763,10 @@
     margin-top: 20px;
 }
 
+.product__desc .inner_desc {
+    text-align: justify;
+}
+
 @media (max-width: 575.98px) {
     .product__desc {
         padding: 0;
