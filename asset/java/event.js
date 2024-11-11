@@ -320,9 +320,26 @@ function showCart() {
 
   // HÀM HIỆN HỘP THOẠI XÁC NHẬN ĐẶT HÀNG
   function confirmPurchase(){
-      if (confirm("Vui lòng kiểm tra lại thông tin giao hàng cũng như đơn hàng trước khi đặt hàng. Sau khi kiểm tra, vui lòng nhấn OK để xác nhận.")) {
-          alert("Đã đặt hàng thành công!");
+    let hasItem = false;
+    // Kiểm tra xem có sản phẩm trong giỏ hàng chưa?
+    for(let i=0; i < localStorage.length; i++) {
+      if(itemList[localStorage.key(i)]) {
+        hasItem = true;
+        break;
       }
+    }
+
+    if(hasItem) {
+      if (confirm("Vui lòng kiểm tra lại thông tin giao hàng cũng như đơn hàng trước khi đặt hàng. Sau khi kiểm tra, vui lòng nhấn OK để xác nhận.")) {
+        alert('Đã đặt hàng thành công!');
+      }
+    } else {
+      alert("Vui lòng thêm sản phẩm vào giỏ hàng");
+    }
+
+      // if (confirm("Vui lòng kiểm tra lại thông tin giao hàng cũng như đơn hàng trước khi đặt hàng. Sau khi kiểm tra, vui lòng nhấn OK để xác nhận.")) {
+      //     alert("Đã đặt hàng thành công!");
+      // }
   }
 
 
