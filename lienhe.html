@@ -86,17 +86,17 @@
         </div>
         <div class="toanbo1">
             <div>
-                <input type="text" placeholder="Tên" class="cauhoilh12" id="lienheten">
-                <input type="text" placeholder="Email" class="cauhoilh12" id="lienheemail">
+                <input type="text" placeholder="Tên" class="cauhoilh12" id="lienheten" onkeypress="nutEnter(event)">
+                <input type="text" placeholder="Email" class="cauhoilh12" id="lienheemail" onkeypress="nutEnter(event)"> 
             </div>
             <div>
-                <input type="text" placeholder="Chủ đề" class="cauhoichude" id="lienhechude">
+                <input type="text" placeholder="Chủ đề" class="cauhoichude" id="lienhechude" onkeypress="nutEnter(event)">
             </div>
             <div>
                 <!-- <input type="text" placeholder="Viết comment..." class="vietcmt"> -->
-                <textarea name="cmt" placeholder ="Viết comment..." class="vietcmt" id="lienhecmt" minlength="0" maxlength="1000"></textarea>
+                <textarea name="cmt" placeholder ="Viết comment..." class="vietcmt" id="lienhecmt" minlength="0" maxlength="1000" onkeypress="nutEnter(event)"></textarea>
             </div>
-            <div class="dinhdangnutgui"><button class="nutgui" onclick="nutGui()" type="button"><b>Gửi</b></button></div>
+            <div class="dinhdangnutgui"><button class="nutgui" onclick="nutGui()" type="button" onkeypress="nutEnter(event)"><b>Gửi</b></button></div>
         </div>
     </main>
     <!-- End Main -->

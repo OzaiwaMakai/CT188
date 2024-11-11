@@ -118,23 +118,16 @@ function nutGui() {
       // document.getElementById("lienhecmt").value = "";
   }
 }
-//Ket Thuc Lien He
 
-function nutEnter(event){
-  var keyCode = Event.keyCode;
-  if(keyCode == 32){
-      doSearch();
+function nutEnter(event) {
+  var key = event.keyCode;
+  if(key === 13) {
+    nutGui();
+    return false;
   }
+  return true;
 }
-
-function doSearch(){
-    var frm=document.getElementById("frm-search");
-    if(frm.words.value.length>0)
-    {
-        frm.submit();
-    }
-}
-
+//Ket Thuc Lien He
 
 // SanPham_Vang
 
