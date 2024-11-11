@@ -181,7 +181,7 @@
     }
 
     .header .inner-wrap .inner-list-user li:nth-child(1) {
-        display: none;
+        display: block;
     }
 
     .header .inner-wrap .inner-list-user li:nth-child(3) {
@@ -192,7 +192,14 @@
         text-align: center;
     }
    }
-
+   /* Kích thước nhỏ hơn 576px */
+   @media (max-width: 575.98px) {
+    .header .inner-wrap .inner-list-user li a {
+        width: 35px;
+        height: 35px;
+    }
+   }
+   
 /*End Header */
 
 /* section one */
