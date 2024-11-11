@@ -2133,23 +2133,26 @@
 }
 
 .gt12 {
-    margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 120px;
     font-size: 18.5px;
     border: 2px solid white;
     text-align: justify;
+
+}
+
+.gt12 p:first-child {
+    margin-top: 0px;
 }
 
 .hinha1 {
     display: flex;
     margin-left: auto;
-    margin-right: 120px;
-    width: 550px;
-    height: 400px;
+    width: 100%;
+    height: auto;
     margin-bottom: 20px;
     border: 1px solid #DBD5CB;
     border-radius: 15px;
+    margin-left: 5%;
 }
 
 .chiacot {
@@ -2166,11 +2169,15 @@
 }
 
 .ngayphunu {
-    margin: 10px;
     border: 1px solid #DBD5CB;
-    width: 30%;
-    padding-top: 5px;
+    max-width: calc(33% - 16px);
+    padding: 5px 0px;
     border-radius: 20px;
+}
+
+.ngayphunu:hover {
+    box-shadow: 0px 0px 9px 3px rgba(66, 33, 11, 0.16);
+    transition: linear 0.3s;
 }
 
 .hinhngayphunu {
@@ -2186,11 +2193,15 @@
 }
 
 .catinh {
-    margin: 10px;
     border: 1px solid #DBD5CB;
-    width: 30%;
-    padding-top: 5px;
+    max-width: calc(33% - 16px);
     border-radius: 20px;
+    padding: 5px 0px;
+}
+
+.catinh:hover {
+    box-shadow: 0px 0px 9px 3px rgba(66, 33, 11, 0.16);
+    transition: linear 0.3s;
 }
 
 .hinhcatinh {
@@ -2220,18 +2231,21 @@
 }
 
 .phongcach {
-    margin: 10px;
     border: 1px solid #DBD5CB;
-    width: 30%;
-    padding-top: 5px;
+    max-width: calc(33% - 16px);
+    padding: 5px 0px;
     border-radius: 20px;
 }
 
+.phongcach:hover {
+    box-shadow: 0px 0px 9px 3px rgba(66, 33, 11, 0.16);
+    transition: linear 0.3s;
+}
+
 .gioithieu3cai {
-    width: 100%;
     display: flex;
-    justify-content: space-between;    
-    margin-bottom: 150px; 
+    justify-content: space-around;    
+    margin-bottom: 150px;
 } 
 
 .tieudegioithieu {
@@ -2247,6 +2261,46 @@
     right: 92px;
     top: 12px;
 }
+
+@media (max-width: 991.98px) {
+    /* Code… */
+    .hinha1 {
+        margin-left:0px;
+    }
+    .ngayphunu {
+        
+    }
+    .hinha1 {
+        margin-left:0px;
+    }
+    .ngayphunu {
+        max-width: 45%;
+    } 
+    
+    .catinh {
+        max-width: 45%;
+    }
+
+    .phongcach {
+        margin-top: 5%;
+        max-width: none;
+    }
+
+}
+
+@media (max-width: 767.98px) {
+    
+    .ngayphunu {
+        margin-top: 5%;
+        max-width: none;
+    }
+    
+    .catinh {
+        margin-top: 5%;
+        max-width: none;
+    }
+}
+
 /* End Gioi Thieu */
 
 /* Lien He */
