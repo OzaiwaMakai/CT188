@@ -66,17 +66,17 @@
                 <form action="url" method="POST" enctype="application/x-www-form-urlencoded">
                         <label class="tieude" for="Email">Email</label>
                     <div>    
-                        <input class="form-align" id="Email" type="text" name="Email" placeholder="Nhập email">
+                        <input class="form-align" id="Email" type="text" name="Email" placeholder="Nhập email" onkeypress="enter1(event)">
                     </div>
                         <label class="tieude" for="taomatkhau">Mật khẩu</label>
                     <div class="inputpd">
-                        <input class="form-align" id="taomatkhau" type="password" name="Mặt khẩu" placeholder="Mật khẩu">
+                        <input class="form-align" id="taomatkhau" type="password" name="Mặt khẩu" placeholder="Mật khẩu" onkeypress="enter1(event)">
                         <span  id="thaydoitrangthai" onclick="anhienmatkhau()">
                             <i class="fas fa-eye"></i>
                         </span>
                     </div>
                     <div class="nutdangky">
-                        <button class="nutdangky1" type="button" onclick="dangnhap()"><b>Đăng Nhập</b></button>
+                        <button class="nutdangky1" type="button" onclick="dangnhap()" onkeypress="enter1(event)"><b>Đăng Nhập</b></button>
                     </div>
                     <div>
                         <span class="thaythedangky">Hoặc đăng nhập với</span>

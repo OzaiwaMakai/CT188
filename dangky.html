@@ -63,24 +63,24 @@
                 <form action="url" method="POST" enctype="application/x-www-form-urlencoded">
                         <label class="tieude" for="Email">Email</label>
                     <div>    
-                        <input class="form-align" id="Email" type="text" name="Email" placeholder="Nhập email">
+                        <input class="form-align" id="Email" type="text" name="Email" placeholder="Nhập email" onkeypress="enter(event)">
                     </div>
                         <label class="tieude" for="taomatkhau">Tạo mật khẩu</label>
                     <div class="inputpd">
-                        <input class="form-align inputpd" id="taomatkhau" type="password" name="Tạo mặt khẩu" placeholder="Tạo mật khẩu" >
+                        <input class="form-align inputpd" id="taomatkhau" type="password" name="Tạo mặt khẩu" placeholder="Tạo mật khẩu" onkeypress="enter(event)">
                         <span  id="thaydoitrangthai" onclick="anhienmatkhau()">
                             <i class="fas fa-eye"></i>
                         </span>
                     </div>
                         <label class="tieude" for="nhaplaimatkhau">Nhập lại mật khẩu</label>
                     <div class="inputpd">
-                        <input class="form-align" id="nhaplaimatkhau" type="password" name="Nhập lại mật khẩu" placeholder="Nhập lại mật khẩu">
+                        <input class="form-align" id="nhaplaimatkhau" type="password" name="Nhập lại mật khẩu" placeholder="Nhập lại mật khẩu" onkeypress="enter(event)">
                         <span  id="thaydoitrangthai1" onclick="anhienmatkhau1()">
                             <i class="fas fa-eye"></i>
                         </span>
                     </div>
                     <div class="nutdangky">
-                        <button class="nutdangky1" type="button" onclick="dangky()"><b>Đăng ký</b></button>
+                        <button class="nutdangky1" type="button" onclick="dangky()" onkeypress="enter(event)"><b>Đăng ký</b></button>
                     </div>
                     <div>
                         <span class="thaythedangky">Hoặc đăng ký với</span>
