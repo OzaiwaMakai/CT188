@@ -53,7 +53,6 @@ function dangky() {
   return false;
 }
 
-
 function anhienmatkhau(){
     const trangthai = document.getElementById("taomatkhau");
     const thaydoitrangthai = document.querySelector("#thaydoitrangthai i");
@@ -74,7 +73,7 @@ function anhienmatkhau1(){
         trangthai.type = "text";
         thaydoitrangthai.classList.remove("fa-eye");
         thaydoitrangthai.classList.add("fa-eye-slash")
-    }else{a-z
+    }else{
         trangthai.type = "password";
         thaydoitrangthai.classList.remove("fa-eye-slash")
         thaydoitrangthai.classList.add("fa-eye");
