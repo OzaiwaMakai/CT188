@@ -2062,7 +2062,7 @@
     display: block;
     width: 100%;
     text-align: left;
-    margin-left: 15%;
+    margin-left: 13%;
     height: 25px;
     margin-bottom: 4px;
     margin-top: 6px;
@@ -2119,10 +2119,9 @@
 .checkbox{
     margin:-10px auto;
 }
-.tieude label{
+label.tieude{
     font-size: 18px;
     font-weight: 550;
-
 }
 
 /* <!--End Đăng Nhập và Đăng Ký--> */
