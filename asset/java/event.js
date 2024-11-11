@@ -121,6 +121,21 @@ function nutGui() {
 }
 //Ket Thuc Lien He
 
+function nutEnter(event){
+  var keyCode = Event.keyCode;
+  if(keyCode == 32){
+      doSearch();
+  }
+}
+
+function doSearch(){
+    var frm=document.getElementById("frm-search");
+    if(frm.words.value.length>0)
+    {
+        frm.submit();
+    }
+}
+
 
 // SanPham_Vang
 
