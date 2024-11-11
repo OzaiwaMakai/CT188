@@ -53,7 +53,6 @@ function dangky() {
   return false;
 }
 
-
 function anhienmatkhau(){
     const trangthai = document.getElementById("taomatkhau");
     const thaydoitrangthai = document.querySelector("#thaydoitrangthai i");
