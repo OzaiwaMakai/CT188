@@ -74,7 +74,7 @@ function anhienmatkhau1(){
         trangthai.type = "text";
         thaydoitrangthai.classList.remove("fa-eye");
         thaydoitrangthai.classList.add("fa-eye-slash")
-    }else{a-z
+    }else{
         trangthai.type = "password";
         thaydoitrangthai.classList.remove("fa-eye-slash")
         thaydoitrangthai.classList.add("fa-eye");
