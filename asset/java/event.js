@@ -16,23 +16,7 @@ function dangnhap(){
 return true;
 }
 
-function enter(event){
-  var e = event.keyCode;
-  if(e == 13){ 
-    dangky();
-    return false;
-  }
-  return true;
-}
-function enter1(event){
-  var e1 = event.keyCode;
-  if(e1 == 13){
-    dangnhap();
-    return false;
-  }
-  return true;
-}
-function kiemtra() {
+function formValidate() {
     var email = document.getElementById("Email");
     var req = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
     var matkhau = document.getElementById("taomatkhau");
@@ -51,8 +35,8 @@ function kiemtra() {
 function testpass(){
     var matkhau = document.getElementById("taomatkhau").value;
     var nhaplaimatkhau = document.getElementById("nhaplaimatkhau").value;
-    if(nhaplaimatkhau != matkhau){
-        alert("Vui lòng nhập đúng vừa nhập mật khẩu");
+    if(matkhau != nhaplaimatkhau){
+        alert("Vui lòng nhập đúng mật khẩu");
         return false;
     }
     window.localStorage.setItem('matkhau',matkhau);
@@ -135,16 +119,23 @@ function nutGui() {
       // document.getElementById("lienhecmt").value = "";
   }
 }
-function nutEnter(event) {
-  var key=event.keyCode;
-  if(key === 13) {
-    nutGui();
-    return false;
+//Ket Thuc Lien He
+
+function nutEnter(event){
+  var keyCode = Event.keyCode;
+  if(keyCode == 32){
+      doSearch();
   }
-  return true;
 }
 
-//Ket Thuc Lien He
+function doSearch(){
+    var frm=document.getElementById("frm-search");
+    if(frm.words.value.length>0)
+    {
+        frm.submit();
+    }
+}
+
 
 // SanPham_Vang
 

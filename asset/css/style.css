@@ -181,7 +181,7 @@
     }
 
     .header .inner-wrap .inner-list-user li:nth-child(1) {
-        display: none;
+        display: block;
     }
 
     .header .inner-wrap .inner-list-user li:nth-child(3) {
@@ -192,7 +192,14 @@
         text-align: center;
     }
    }
-
+   /* Kích thước nhỏ hơn 576px */
+   @media (max-width: 575.98px) {
+    .header .inner-wrap .inner-list-user li a {
+        width: 35px;
+        height: 35px;
+    }
+   }
+   
 /*End Header */
 
 /* section one */
@@ -2073,22 +2080,24 @@
     font-size: 24px;
 }
 .align-center{
+    display: flex;
+    flex-direction: column;
     border: 1px solid #ffff;
-    width: 600px;
-    height: 600px;
     text-align: center;
     border-radius: 30px;
     margin: 20px auto;
 }
+
 .chung{
-    display: inline-block;
+    display: flex;
     margin: 10px auto;
+    flex-direction: column;
 }
 .tieude{
     display: block;
     width: 100%;
     text-align: left;
-    margin-left: 13%;
+    margin-left: 80px;  
     height: 25px;
     margin-bottom: 4px;
     margin-top: 6px;
@@ -2098,20 +2107,22 @@
 }
 .sizetieude2{
     font-size: 20px;
+    padding: 0 30px;
 }
 .form-align{
     border-radius: 10px;
     padding: 9px;
+    width: 75%;
 }
 .nutdangky{
     margin-top: -8px;
 }
 .nutdangky1{
     text-align: center;
-    margin: 30px;
+    margin: 30px 0;
     border-radius: 10px;
     padding: 5px;
-    width: 420px;
+    width: 75%;
     background-color: #DBD5CB;
     color: #5B3724;
 }
@@ -2164,21 +2175,26 @@ label.tieude{
 }
 
 .gt12 {
-    margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 120px;
     font-size: 18.5px;
     border: 2px solid white;
     text-align: justify;
+
+}
+
+.gt12 p:first-child {
+    margin-top: 0px;
 }
 
 .hinha1 {
     display: flex;
     margin-left: auto;
-    margin-right: 120px;
-    width: 550px;
-    height: 400px;
+    width: 100%;
+    height: auto;
     margin-bottom: 20px;
+    border: 1px solid #DBD5CB;
+    border-radius: 15px;
+    margin-left: 5%;
 }
 
 .chiacot {
@@ -2187,19 +2203,23 @@ label.tieude{
 }
 
 .bosuutap {
-    margin-top: 40px;
-    margin-bottom: 10px;
+    margin-top: 150px;
+    margin-bottom: 40px;
     text-align: center;
     font-size: 40px;
     border: 2px solid white;
 }
 
 .ngayphunu {
-    margin: 10px;
-    border: 1px solid #5B3724;
-    width: 30%;
-    padding-top: 5px;
+    border: 1px solid #DBD5CB;
+    max-width: calc(33% - 16px);
+    padding: 5px 0px;
     border-radius: 20px;
+}
+
+.ngayphunu:hover {
+    box-shadow: 0px 0px 9px 3px rgba(66, 33, 11, 0.16);
+    transition: linear 0.3s;
 }
 
 .hinhngayphunu {
@@ -2215,11 +2235,15 @@ label.tieude{
 }
 
 .catinh {
-    margin: 10px;
-    border: 1px solid #5B3724;
-    width: 30%;
-    padding-top: 5px;
+    border: 1px solid #DBD5CB;
+    max-width: calc(33% - 16px);
     border-radius: 20px;
+    padding: 5px 0px;
+}
+
+.catinh:hover {
+    box-shadow: 0px 0px 9px 3px rgba(66, 33, 11, 0.16);
+    transition: linear 0.3s;
 }
 
 .hinhcatinh {
@@ -2249,18 +2273,21 @@ label.tieude{
 }
 
 .phongcach {
-    margin: 10px;
-    border: 1px solid #5B3724;
-    width: 30%;
-    padding-top: 5px;
+    border: 1px solid #DBD5CB;
+    max-width: calc(33% - 16px);
+    padding: 5px 0px;
     border-radius: 20px;
 }
 
+.phongcach:hover {
+    box-shadow: 0px 0px 9px 3px rgba(66, 33, 11, 0.16);
+    transition: linear 0.3s;
+}
+
 .gioithieu3cai {
-    width: 100%;
     display: flex;
-    justify-content: space-between;    
-    margin-bottom: 30px; 
+    justify-content: space-around;    
+    margin-bottom: 150px;
 } 
 
 .tieudegioithieu {
@@ -2276,6 +2303,46 @@ label.tieude{
     right: 92px;
     top: 12px;
 }
+
+@media (max-width: 991.98px) {
+    /* Code… */
+    .hinha1 {
+        margin-left:0px;
+    }
+    .ngayphunu {
+        
+    }
+    .hinha1 {
+        margin-left:0px;
+    }
+    .ngayphunu {
+        max-width: 45%;
+    } 
+    
+    .catinh {
+        max-width: 45%;
+    }
+
+    .phongcach {
+        margin-top: 5%;
+        max-width: none;
+    }
+
+}
+
+@media (max-width: 767.98px) {
+    
+    .ngayphunu {
+        margin-top: 5%;
+        max-width: none;
+    }
+    
+    .catinh {
+        margin-top: 5%;
+        max-width: none;
+    }
+}
+
 /* End Gioi Thieu */
 
 /* Lien He */
@@ -2380,7 +2447,7 @@ label.tieude{
 }
 
 .dinhdangnutgui {
-    padding-bottom: 60px;
+    padding-bottom: 150px;
 }
 
 .toanbo1 {
@@ -2396,4 +2463,5 @@ label.tieude{
 .cart_page  tbody .button{
     padding: 0px 8px;
 }
+
 /* End Cart */
